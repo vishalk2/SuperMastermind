@@ -27,7 +27,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 ### 1. Launching the Application
 - UI POV: User launches the application by executing `app.py` from the terminal.
 	> `python app.py`<br>
-<img width="1367" height="622" alt="image" src="https://github.com/user-attachments/assets/20c7dc62-3a5a-456f-9b94-bc61c8c0b049" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/20c7dc62-3a5a-456f-9b94-bc61c8c0b049" />
 <br>
 
 - Code POV:
@@ -40,7 +40,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 - UI POV: User sees the Home screen.
 	> - App title and a short subtitle.<br>
 	> - Two Call-To-Actions (CTAs): `NEW GAME` and `READ INSTRUCTIONS`.<br>
-<img width="1365" height="720" alt="image" src="https://github.com/user-attachments/assets/7fcaac1f-9a56-48fc-a809-684cfa55c2f7" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/7fcaac1f-9a56-48fc-a809-684cfa55c2f7" />
 <br>
 
 - Code POV:
@@ -52,7 +52,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 - UI POV: User clicks the `READ INSTRUCTIONS` button. The App opens the Instructions screen.
 	> - The instructions are displayed inside a styled, read-only textbox.<br>
 	> - The `BACK` CTA button takes the user back to the home screen.<br>
-<img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/52019114-b1b1-4d18-8f3e-f0aac8a28c25" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/52019114-b1b1-4d18-8f3e-f0aac8a28c25" />
 <br>
 
 - Code POV:
@@ -64,7 +64,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 - UI POV: When starting a new game, User chooses a task on the `CHOOSE TASK` screen.
 	> - If the user selects `SET-CODE`, the user will set the secret code first and the system will attempt to decode it. Once the system completes decoding the user's code, the roles are reversed and the 2nd part of the game is rendered: the system will set the code and the user will attempt to decode it.<br>
 	> - If the user selects the `DE-CODE`, the system sets the secret code first and the user will attempt to decode it. Once the system completes decoding the user's code, the roles are reversed and the 2nd part of the game is rendered: the user will set the code and the system will attempt to decode it.<br>
-<img width="1365" height="720" alt="image" src="https://github.com/user-attachments/assets/f2ded457-6257-46db-a1d7-3d4104da9320" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f2ded457-6257-46db-a1d7-3d4104da9320" />
 <br>
 
 - Code POV:
@@ -75,7 +75,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 
 ### 5. Gameplay Load
 - UI POV: After choosing a role, User sees the loading screen briefly (for about 5 seconds) - with a "SET-CODE"/"DE-CODE" role mentioned based on their initial selection.
-<img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/b7a3d317-9f45-408f-9569-c0df11191b77" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/b7a3d317-9f45-408f-9569-c0df11191b77" />
 <br>
 
 - Code POV:
@@ -91,7 +91,7 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 
 - Shows the current role labels (USER / SYSTEM) and a prominent `START ▶` button to begin the turn flow.
 
-<img width="1366" height="722" alt="Left panel" src="https://github.com/user-attachments/assets/3c49483a-3306-4ef6-9293-e5b614652f2b" />
+<img width="800" alt="Left panel" src="https://github.com/user-attachments/assets/3c49483a-3306-4ef6-9293-e5b614652f2b" />
 
 #### Center board (Screen B)
 
@@ -99,14 +99,14 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 - There are five slot buttons representing the code positions. The slots let the player choose colours when setting a code or entering a guess.
 - Turn-by-turn guesses and feedback are displayed on the board.
 
-<img width="1365" height="719" alt="Center board" src="https://github.com/user-attachments/assets/bc24d2ab-4ed3-41ea-b0cd-29cc954c25a8" />
+<img width="800" alt="Center board" src="https://github.com/user-attachments/assets/bc24d2ab-4ed3-41ea-b0cd-29cc954c25a8" />
 
 #### Right panel (Screen C)
 
 - Acts as the chat / message area. System messages (taunts, prompts, warnings) are appended here.
 - The right panel also has an `EXIT ▶` button to end the game and return to the home screen.
 
-<img width="1365" height="721" alt="Right panel" src="https://github.com/user-attachments/assets/d2315a25-e1b5-4593-8f35-ec66a35fd0a8" />
+<img width="800" alt="Right panel" src="https://github.com/user-attachments/assets/d2315a25-e1b5-4593-8f35-ec66a35fd0a8" />
 
 **Code POV:**
 
@@ -114,32 +114,32 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 
 
 ### 7. Roles and Turn Transitions
-- UI POV:
-    - If the user chose `SET-CODE` initially:
-	    > - User is prompted to pick colours for the 5-slot code using the UI slot buttons. The code should be a list of 5 colour names.<br>
-	    > - Once the user sets the code and starts, the system will try to guess and decode the code.<br>
 
-<img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/2e76d5cf-a0e1-4a4a-9f43-c1c20a166b08" />
+The roles determine who sets the code and who decodes it. There are two primary flows:
 
-<br>
+#### If the user chose `SET-CODE`
 
-    - If the user chose `DE-CODE`:
-	    > - The system creates a secret code, and the user attempts to decode it by making guesses on the center board.<br>
+- The user is prompted to pick colours for the 5-slot code using the UI slot buttons. The code should be a list of 5 colour names.
+- Once the user sets the code and starts, the system will attempt to guess and decode the code using its solver.
 
-<img width="1365" height="715" alt="image" src="https://github.com/user-attachments/assets/ea029b0d-9956-4661-90ba-c0d9c9896c33" />
+<img width="800" alt="User set code" src="https://github.com/user-attachments/assets/2e76d5cf-a0e1-4a4a-9f43-c1c20a166b08" />
 
-<br>
+#### If the user chose `DE-CODE`
 
-- Code POV:
-    > - The system uses `SystemDecoder` algorithm from `util/system_decoder.py` during its turn to decode in order to generate guesses and to update its internal knowledge from feedback.<br>
-    > - The system uses `util/logics.create_colour_code()` and its internal logic calculating functions to improve the code-set difficulty during its turn to set code.<br>
+- The system creates a secret code (via `create_colour_code()`), and the user attempts to decode it by making guesses on the center board.
 
-<br>
+<img width="800" alt="System set code" src="https://github.com/user-attachments/assets/ea029b0d-9956-4661-90ba-c0d9c9896c33" />
+
+**Code POV:**
+
+- The system uses the `SystemDecoder` algorithm in `util/system_decoder.py` to generate guesses and update its knowledge from feedback.
+- The system uses `util/logics.create_colour_code()` when it needs to set a code for the user to decode.
+
 
 ### 8. Guess Evaluation and Feedback
 - UI POV: After each guess, the guess is evaluated and the feedback is presented per-slot, and User sees the updated UI consisting of turn counters and feedback labels.
     > - Each guess is evaluated and per-position feedback is returned: correct-placement (✅), present-wrong-place (⚠️), or not-present (❌).<br>
-<img width="1365" height="718" alt="image" src="https://github.com/user-attachments/assets/b040ae57-212a-4e01-9737-846069407a1a" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/b040ae57-212a-4e01-9737-846069407a1a" />
 <br>
 
 - Code POV:
@@ -149,30 +149,35 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 <br>
 
 ### 9. Revealing and End Game
-- UI POV:
-    > - If the user clicks on reveal system code early (the UI shows a reveal button), the user loses the game and a message is shown in the chat area.<br>
 
-<img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/9a5f92a7-fa55-4deb-943b-77d71c91759c" />
+The game can end in a few ways depending on player actions and successful decoding:
 
-<br>
+#### Early reveal (user)
 
-    > - NOTE: The "View/Hide Code" is only for the user to quickly view and hide the secret code they have set in case they forget their code. It won't reveal the code to the system and won't result in game loss for the user.<br>
+- If the user reveals the system's code early using the reveal control, the user forfeits and the system logs the win in the chat area.
 
-<img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/03031fd6-f8b4-4ce5-9b00-6ee05bd3a0a6" />
+<img width="800" alt="Reveal code" src="https://github.com/user-attachments/assets/9a5f92a7-fa55-4deb-943b-77d71c91759c" />
 
-<br>
+#### View/Hide Code (user convenience)
 
-    > - When the code is cracked (all positions correct), the UI shows a success message with the number of turns and the right panel logs the win or tie messages. Whoever decodes the other's code in less moves is declared the winner.<br>
+- The `View/Hide Code` control only toggles the user's own code visibility (so they don't forget what they set). It does not expose the code to the system and does not cause a loss.
 
-<img width="1365" height="718" alt="image" src="https://github.com/user-attachments/assets/f31439e3-f118-4845-b15c-673136c72fbd" />
+<img width="800" alt="View hide code" src="https://github.com/user-attachments/assets/03031fd6-f8b4-4ce5-9b00-6ee05bd3a0a6" />
 
-<br>
+#### Successful decode
 
-    > - If both the user's and the system's turns to decode on another are the same, the game ends in a tie.<br>
+- When a code is cracked (all five positions correct), the UI displays a success message with the number of turns taken. The right panel logs the win or tie messages and the game ends.
 
-<hr>
+<img width="800" alt="End game success" src="https://github.com/user-attachments/assets/f31439e3-f118-4845-b15c-673136c72fbd" />
+
+- If both the user and system finish decoding in the same number of turns, the game ends in a tie.
+
+---
 
 Final Note:
+<br>
 Just built this game as I wanted to re-visit and re-feel the coding experience after a long time.
+<br>
 Feel free to use, play, enjoy, and modify the application and the game. I'm always open for feedback, suggestions and improvements.
+<br>
 Peace :v:
