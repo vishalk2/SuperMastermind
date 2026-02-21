@@ -84,29 +84,34 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 <br>
 
 ### 6. Gameplay Screen Layout
-- UI POV: Post the brief interval, the loading screen transitions to the gameplay screen. User sees the gameplay screen which is split across 3-panels:
-    - Left panel (Screen A):
-        > - Shows the current role labels (USER / SYSTEM) and a prominent `START ▶` button to begin the turn flow.<br>
-<img width="1366" height="722" alt="image" src="https://github.com/user-attachments/assets/3c49483a-3306-4ef6-9293-e5b614652f2b" />
-<br>
 
-    - Center board (Screen B):
-        > - This is the game board - interactive area where guesses are filled and feedbacks are shown.<br>
-        > - There are five slot buttons representing the code positions. The slots let the player choose colours when setting a code or entering a guess.<br>
-        > - Turn-by-turn guesses and feedback are displayed on the board.<br>
-<img width="1365" height="719" alt="image" src="https://github.com/user-attachments/assets/bc24d2ab-4ed3-41ea-b0cd-29cc954c25a8" />
-<br>
+Post the brief interval, the loading screen transitions to the gameplay screen. The gameplay screen is split across three panels:
 
-    - Right panel (Screen C):
-        > - Acts as the chat / message area. System messages (taunts, prompts, warnings) are appended here.<br>
-        > - The right panel also has an `EXIT ▶` button to end the game and return to home screen.<br>
-<img width="1365" height="721" alt="image" src="https://github.com/user-attachments/assets/d2315a25-e1b5-4593-8f35-ec66a35fd0a8" />
-<br>
+#### Left panel (Screen A)
 
-- Code POV:
-    > - Rendered from `MainWindow._display_gameplay_screen` in `ui/main_window.py`.<br>
+- Shows the current role labels (USER / SYSTEM) and a prominent `START ▶` button to begin the turn flow.
 
-<br>
+<img width="1366" height="722" alt="Left panel" src="https://github.com/user-attachments/assets/3c49483a-3306-4ef6-9293-e5b614652f2b" />
+
+#### Center board (Screen B)
+
+- This is the game board — the interactive area where guesses are entered and feedback is shown.
+- There are five slot buttons representing the code positions. The slots let the player choose colours when setting a code or entering a guess.
+- Turn-by-turn guesses and feedback are displayed on the board.
+
+<img width="1365" height="719" alt="Center board" src="https://github.com/user-attachments/assets/bc24d2ab-4ed3-41ea-b0cd-29cc954c25a8" />
+
+#### Right panel (Screen C)
+
+- Acts as the chat / message area. System messages (taunts, prompts, warnings) are appended here.
+- The right panel also has an `EXIT ▶` button to end the game and return to the home screen.
+
+<img width="1365" height="721" alt="Right panel" src="https://github.com/user-attachments/assets/d2315a25-e1b5-4593-8f35-ec66a35fd0a8" />
+
+**Code POV:**
+
+- Rendered from `MainWindow._display_gameplay_screen` in `ui/main_window.py`.
+
 
 ### 7. Roles and Turn Transitions
 - UI POV:
