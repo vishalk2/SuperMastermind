@@ -156,12 +156,17 @@ class MainWindow(ctk.CTkFrame):
 
         box = ctk.CTkTextbox(
             self.bg_canvas,
-            width=800,
-            height=500,
-            bg_color=BLACK,
+            width=900,
+            height=520,
             fg_color=BLACK,
+            bg_color=BLACK,
+            text_color=PURPLE,
+            font=ctk.CTkFont(family="Times New Roman", size=22),
+            border_width=2,
+            border_color=ORANGE,
+            corner_radius=8,
         )
-        box.pack(pady=10)
+        box.pack(pady=12, padx=8)
         box.insert("end", GAME_INSTRUCTIONS)
         box.configure(state="disabled")
 
@@ -658,7 +663,7 @@ class MainWindow(ctk.CTkFrame):
 
             ctk.CTkLabel(
                 slot,
-                text="SYSTEM's CODE",
+                text="SYSTEM's SECRET CODE",
                 text_color=WHITE,
                 font=("Times New Roman", 16, "bold"),
             ).pack()
@@ -695,7 +700,7 @@ class MainWindow(ctk.CTkFrame):
 
             ctk.CTkLabel(
                 slot,
-                text="YOUR CODE",
+                text="YOUR SECRET CODE",
                 text_color=WHITE,
                 font=("Times New Roman", 16, "bold"),
             ).pack()
@@ -1109,8 +1114,8 @@ class MainWindow(ctk.CTkFrame):
             logger.info("Gameplay Handler: User won the game!")
             self._add_chat_message(
                 sender=USER,
-                message=f"Turns taken by you to crack my code: {self.user_total_turns}\n\n"
-                + f"Turns taken by me to crack your code: {self.system_total_turns}",
+                message=f"Turns taken by you to crack my code: {self.system_total_turns}\n\n"
+                + f"Turns taken by me to crack your code: {self.user_total_turns}",
             )
             self._add_chat_message(sender=USER, message=USER_WINNING_TEXT)
 

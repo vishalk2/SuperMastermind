@@ -73,12 +73,24 @@ CHOOSE_TASK_SCREEN = "CHOOSE TASK"
 
 # UI - Instructions
 GAME_INSTRUCTIONS = (
-    "• 10 colors available\n"
-    "• Code length: 5 colors\n\n"
-    "• One player sets the code\n"
-    "• The other decodes it\n\n"
-    "• Feedback is given each turn\n"
-    "• Crack the code in minimum moves"
+    "1. SuperMastermind is a code-breaking game where two players take turns setting and "
+    "guessing a        secret code.\n\n"
+    "2. The objective of the game is to guess the secret code set by the opponent.\n\n"
+    "3. In this game, one of the players is the SYSTEM (the computer) and the other player "
+    "is YOU (the     user).\n\n"
+    "4. The game consists of two rounds. In the first round, one player sets the code and "
+    "the other player    tries to decode it. In the second round, the roles are reversed.\n\n"
+    "5. The code is made up of a sequence of colors, and the player trying to decode the "
+    "code will             receive feedback on their guesses.\n\n"
+    "6. There are a total of 9 colours available, and the secret code consists of 5 slots to fill.\n\n"
+    "7. The feedback for each guess is given in the form of emojis:\n"
+    "        > '✅' for correct color in correct position\n"
+    "        > '⚠️' for correct color in wrong position\n"
+    "        > '❌' for incorrect color.\n\n"
+    "8. The player who successfully decodes the opponent's code in the fewest number of turns wins "
+    "the     game.\n\n"
+    "So, are you ready to challenge the SYSTEM and become the ultimate SuperMastermind?\n"
+    "Let's get started!"
 )
 
 # UI - Screen A (Left Panel) Labels
