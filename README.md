@@ -12,13 +12,13 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
     - The application entry point is the `app.py` file.
 
     - The complete UI lives functionality under the `ui/` directory:
-        > The `main_window.py` file is the master file for the complete GUI, response and the gameplay.\n
+        > The `main_window.py` file is the master file for the complete GUI, response and the gameplay.
         > The `background.py` file consists of helper functions for rendering background effects and background images.
 
     - The backend Game logic and the logging mechanism are placed the `util/` directory.
-        > The `logging_config.py` renders the logging mechanism for the application.\n
-        > The `constants.py` file holds the centralized values for all constants, texts, strings, and colour-codes used and required across the application.\n
-        > The `logics.py` file holds the backend helper and logic calculating functions for gameplay.\n
+        > The `logging_config.py` renders the logging mechanism for the application.
+        > The `constants.py` file holds the centralized values for all constants, texts, strings, and colour-codes used and required across the application.
+        > The `logics.py` file holds the backend helper and logic calculating functions for gameplay.
         > The `system_decoder.py` file consists of the complete System Decoding Algorithm that works with the primary objective of decoding the User's code in as less moves as possible. During gameplay, the system runs a discovery phase (randomized sampling of unused colours while learning which colours are present) followed by a placement phase where it tries to place known colours in allowed positions.
 
 ---
