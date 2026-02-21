@@ -3,6 +3,14 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 
 <hr>
 
+## Gameplay >>>
+
+<br>
+https://github.com/user-attachments/assets/201b7e80-52e8-4865-a539-57cf986a9883
+<br>
+
+<hr>
+
 ## Codebase
 1. Dependencies
     - customtkinter==5.2.2
