@@ -6,7 +6,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
 ## Gameplay >>>
 
 <br>
-https://github.com/user-attachments/assets/201b7e80-52e8-4865-a539-57cf986a9883
+<video src="https://github.com/user-attachments/assets/201b7e80-52e8-4865-a539-57cf986a9883"></video>
 <br>
 
 <hr>
