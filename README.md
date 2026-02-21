@@ -12,7 +12,7 @@ SuperMastermind is a code-breaking game played by two players. Each player tries
     - The application entry point is the `app.py` file.
 
     - The complete UI lives functionality under the `ui/` directory:
-        > The `main_window.py` file is the master file for the complete GUI, response and the gameplay.
+        > The `main_window.py` file is the master file for the complete GUI, response and the gameplay.<br>
         > The `background.py` file consists of helper functions for rendering background effects and background images.
 
     - The backend Game logic and the logging mechanism are placed the `util/` directory.
