@@ -1,52 +1,15 @@
 import random
+import logging
+
 from collections import Counter
 
-COLOUR_OPTIONS = [
-    "RED",
-    "ORANGE",
-    "YELLOW",
-    "GREEN",
-    "BLUE",
-    "PURPLE",
-    "BROWN",
-    "BLACK",
-    "WHITE",
-]
+from util.constants import *
 
-CORRECT = "Y"
-WRONG = "N"
-MISTAKE = "M"
+
+logger = logging.getLogger(APP_NAME)
 
 
 # >>>
-def evaluate_guess(secret, guess):
-
-    feedback = [""] * 5
-
-    secret_remaining = []
-    guess_remaining = []
-    remaining_indices = []
-
-    for i, (s, g) in enumerate(zip(secret, guess)):
-        if s == g:
-            feedback[i] = CORRECT
-        else:
-            secret_remaining.append(s)
-            guess_remaining.append(g)
-            remaining_indices.append(i)
-
-    secret_counter = Counter(secret_remaining)
-
-    for idx, g in zip(remaining_indices, guess_remaining):
-        if secret_counter[g] > 0:
-            feedback[idx] = MISTAKE
-            secret_counter[g] -= 1
-        else:
-            feedback[idx] = WRONG
-
-    return "".join(feedback)
-
-
 class SystemDecoder:
 
     def __init__(self):
@@ -58,52 +21,49 @@ class SystemDecoder:
         self.eliminated_colours = set()
         self.completed_colours = set()
 
-        self.correct_positions = dict()  # index -> colour
-        self.forbidden_positions = dict()  # colour -> {indices}
+        self.correct_positions = dict()
+        self.forbidden_positions = dict()
 
         self.colour_counts = Counter()
-        self.unused_colours = COLOUR_OPTIONS.copy()
+        self.unused_colours = AVAILABLE_COLOURS.copy()
         self.discovery_mode = True
         self.discovery_guess_count = 0
         self.placement_guess_count = 0
-        print("Completed initializing state variables.")
+        logger.info("Util: SystemDecoder initialized.")
 
     # -----------------------------------------------------
-    # GENERATE NEXT GUESS
+    # GENERATE GUESS
     # -----------------------------------------------------
     def generate_guess(self):
 
         self.turn = self.turn + 1
 
         if self.turn == 1:
-            self.current_guess = random.sample(COLOUR_OPTIONS, 5)
+            self.current_guess = random.sample(AVAILABLE_COLOURS, 5)
+            logger.info(f"Util: SystemDecoder guess: {self.current_guess}.")
             return self.current_guess
 
         if self.discovery_mode == True and len(self.present_colours) < 5:
             self.current_guess = self.discovery_guess()
+            logger.info(f"Util: SystemDecoder guess: {self.current_guess}.")
             return self.current_guess
 
         self.current_guess = self.placement_guess()
+        logger.info(f"Util: SystemDecoder guess: {self.current_guess}.")
         return self.current_guess
 
     # -----------------------------------------------------
     # DISCOVERY PHASE
     # -----------------------------------------------------
     def discovery_guess(self):
-        print("---")
-        print(f"Turn: {self.turn} | Discover Guess")
 
         self.discovery_guess_count += 1
-
         new_guess = [None] * 5
-        print(f"New Guess: {new_guess}")
 
         for idx, colour in self.correct_positions.items():
             new_guess[idx] = colour
-        print(f"Guess after filling correct positions: {new_guess}")
 
         remaining_slots = {i for i, c in enumerate(new_guess) if c is None}
-        print(f"Remaining Slots: {remaining_slots}")
 
         for colour, indices in self.forbidden_positions.items():
 
@@ -115,31 +75,20 @@ class SystemDecoder:
 
             forbidden_slots = set(map(int, indices))
             available_slots = list(remaining_slots - forbidden_slots)
-
-            print(f"Colour: {colour} | Forbidden Positions: {forbidden_slots}")
-            print(f"Available Slots: {available_slots}")
-
             if not available_slots:
                 continue
-
             new_idx = random.choice(available_slots)
             new_guess[new_idx] = colour
             remaining_slots.remove(new_idx)
-            print(f"Chosen Index: {new_idx}")
-            print(f"Remaining Slots: {remaining_slots}")
-            print(f"New Guess: {new_guess}")
 
         for idx in list(remaining_slots):
 
-            print(f"idx: {idx} | Unused Colours: {self.unused_colours}")
             present_colours = list(self.present_colours)
 
             if self.unused_colours:
                 colour = random.choice(list(self.unused_colours))
                 new_guess[idx] = colour
                 self.unused_colours.remove(colour)
-                print(f"Added colours from unused_colours: {colour}")
-
             elif present_colours:
                 while True:
                     colour = random.choice(present_colours)
@@ -152,17 +101,10 @@ class SystemDecoder:
                         continue
 
                     new_guess[idx] = colour
-                    print(f"Added colours from present_colours: {new_guess[idx]}")
                     break
 
             else:
                 new_guess[idx] = random.choice(new_guess[:4])
-                print(
-                    f"Added colours from current colours in new_guess: {new_guess[idx]}"
-                )
-
-        print(f"Final guess in discovery mode: {new_guess}")
-        print("---")
 
         return new_guess
 
@@ -170,15 +112,9 @@ class SystemDecoder:
     # PLACEMENT PHASE
     # -----------------------------------------------------
     def placement_guess(self):
-        print("---")
-        print(f"Turn: {self.turn} | Placement Guess")
+
         self.placement_guess_count += 1
-
         new_guess = [None] * 5
-        print(f"New Guess: {new_guess}")
-
-        print(f"Present Colours: {self.present_colours}")
-        print(f"Correct positions: {self.correct_positions}")
 
         if len(self.present_colours) == 1:
             new_guess = [list(self.present_colours)[0]] * 5
@@ -186,27 +122,18 @@ class SystemDecoder:
 
         for idx, colour in self.correct_positions.items():
             new_guess[idx] = colour
-        print(f"Guess after filling correct positions: {new_guess}")
 
         remaining_slots = {i for i in range(5) if new_guess[i] is None}
-        print(f"Remaining Slots: {remaining_slots}")
 
         if len(self.present_colours) == 2:
 
             for colour, indices in self.forbidden_positions.items():
 
-                if (
-                    colour in self.completed_colours
-                ):
+                if colour in self.completed_colours:
                     continue
 
                 forbidden_slots = set(map(int, indices))
                 allowed_slots = remaining_slots - forbidden_slots
-
-                print(f"Colour: {colour}")
-                print(f"Forbidden Slots: {forbidden_slots}")
-                print(f"Allowed Slots: {allowed_slots}")
-
                 if not allowed_slots:
                     continue
 
@@ -214,7 +141,6 @@ class SystemDecoder:
                     new_guess[idx] = colour
 
                 remaining_slots = remaining_slots - allowed_slots
-                print(f"Remaining Slots: {remaining_slots}")
 
             if remaining_slots:
 
@@ -222,24 +148,17 @@ class SystemDecoder:
                     colour: len(self.forbidden_positions.get(colour, []))
                     for colour in self.present_colours
                 }
-                print(f"Forbidden Counts: {forbidden_counts}")
 
                 preferred_colour = min(forbidden_counts, key=forbidden_counts.get)
 
-                print(f"Preferred Colour for remaining slots: {preferred_colour}")
-
                 for idx in remaining_slots:
                     new_guess[idx] = preferred_colour
-
-            print(f"Final New Guess: {new_guess}")
 
         if len(self.present_colours) == 3:
 
             for colour, indices in self.forbidden_positions.items():
 
-                if (
-                    colour in self.completed_colours
-                ):
+                if colour in self.completed_colours:
                     continue
 
                 correct_colour_counts = Counter(self.correct_positions.values())
@@ -251,31 +170,17 @@ class SystemDecoder:
 
                 forbidden_slots = set(map(int, indices))
                 allowed_slots = remaining_slots - forbidden_slots
-
-                print(f"Colour: {colour}")
-                print(f"Forbidden Slots: {forbidden_slots}")
-                print(f"Allowed Slots: {allowed_slots}")
-
                 if not allowed_slots:
                     continue
 
-                # for idx in allowed_slots:
-                #     new_guess[idx] = colour
                 new_idx = random.choice(list(allowed_slots))
                 new_guess[new_idx] = colour
                 allowed_slots.remove(new_idx)
                 remaining_slots.remove(new_idx)
-                print(f"Chosen Index: {new_idx}")
-                print(f"Remaining Slots: {remaining_slots}")
-                print(f"New Guess: {new_guess}")
-
-                # remaining_slots -= allowed_slots
-                print(f"Remaining Slots: {remaining_slots}")
 
             if remaining_slots:
 
                 for idx in remaining_slots:
-                    print(f"idx: {idx} in remaining slots")
 
                     candidate_colours = [
                         c
@@ -291,20 +196,15 @@ class SystemDecoder:
 
                     if not candidate_colours:
                         candidate_colours = list(self.present_colours)
-                    print(f"Candidate Colours for remaining slots: {candidate_colours}")
 
                     forbidden_counts = {
                         colour: len(self.forbidden_positions.get(colour, []))
                         for colour in candidate_colours
                     }
-                    print(f"Forbidden Counts: {forbidden_counts}")
 
                     preferred_colour = min(forbidden_counts, key=forbidden_counts.get)
-                    print(f"Preferred Colour for remaining slots: {preferred_colour}")
 
                     new_guess[idx] = preferred_colour
-
-            print(f"Final New Guess: {new_guess}")
 
         if len(self.present_colours) == 4:
 
@@ -318,26 +218,13 @@ class SystemDecoder:
 
                 forbidden_slots = set(map(int, indices))
                 allowed_slots = remaining_slots - forbidden_slots
-
-                print(f"Colour: {colour}")
-                print(f"Forbidden Slots: {forbidden_slots}")
-                print(f"Allowed Slots: {allowed_slots}")
-
                 if not allowed_slots:
                     continue
 
-                # for idx in allowed_slots:
-                #     new_guess[idx] = colour
                 new_idx = random.choice(list(allowed_slots))
                 new_guess[new_idx] = colour
                 allowed_slots.remove(new_idx)
                 remaining_slots.remove(new_idx)
-                print(f"Chosen Index: {new_idx}")
-                print(f"Remaining Slots: {remaining_slots}")
-                print(f"New Guess: {new_guess}")
-
-                # remaining_slots -= allowed_slots
-                print(f"Remaining Slots: {remaining_slots}")
 
             if remaining_slots:
 
@@ -353,13 +240,11 @@ class SystemDecoder:
 
                 if not candidate_colours:
                     candidate_colours = list(self.present_colours)
-                print(f"Candidate Colours for remaining slots: {candidate_colours}")
 
                 forbidden_counts = {
                     colour: len(self.forbidden_positions.get(colour, []))
                     for colour in candidate_colours
                 }
-                print(f"Forbidden Counts: {forbidden_counts}")
 
                 preferred_colour = min(forbidden_counts, key=forbidden_counts.get)
 
@@ -371,12 +256,8 @@ class SystemDecoder:
                 if double_count_colour != None:
                     preferred_colour = double_count_colour
 
-                print(f"Preferred Colour for remaining slots: {preferred_colour}")
-
                 for idx in remaining_slots:
                     new_guess[idx] = preferred_colour
-
-            print(f"Final New Guess: {new_guess}")
 
         if len(self.present_colours) == 5:
 
@@ -390,26 +271,13 @@ class SystemDecoder:
 
                 forbidden_slots = set(map(int, indices))
                 allowed_slots = remaining_slots - forbidden_slots
-
-                print(f"Colour: {colour}")
-                print(f"Forbidden Slots: {forbidden_slots}")
-                print(f"Allowed Slots: {allowed_slots}")
-
                 if not allowed_slots:
                     continue
 
-                # for idx in allowed_slots:
-                #     new_guess[idx] = colour
                 new_idx = random.choice(list(allowed_slots))
                 new_guess[new_idx] = colour
                 allowed_slots.remove(new_idx)
                 remaining_slots.remove(new_idx)
-                print(f"Chosen Index: {new_idx}")
-                print(f"Remaining Slots: {remaining_slots}")
-                print(f"New Guess: {new_guess}")
-
-                # remaining_slots -= allowed_slots
-                print(f"Remaining Slots: {remaining_slots}")
 
             if remaining_slots:
 
@@ -418,22 +286,16 @@ class SystemDecoder:
                 ]
                 if not candidate_colours:
                     candidate_colours = list(self.present_colours)
-                print(f"Candidate Colours for remaining slots: {candidate_colours}")
 
                 forbidden_counts = {
                     colour: len(self.forbidden_positions.get(colour, []))
                     for colour in candidate_colours
                 }
-                print(f"Forbidden Counts: {forbidden_counts}")
 
                 preferred_colour = min(forbidden_counts, key=forbidden_counts.get)
 
-                print(f"Preferred Colour for remaining slots: {preferred_colour}")
-
                 for idx in remaining_slots:
                     new_guess[idx] = preferred_colour
-
-            print(f"Final New Guess: {new_guess}")
 
         return new_guess
 
@@ -444,14 +306,12 @@ class SystemDecoder:
 
         colour_feedback_count = Counter()
 
-        # Update knowledge for correctly placed colours first
         for i, (colour, fb) in enumerate(zip(self.current_guess, feedback)):
             if fb == CORRECT:
                 self.present_colours.add(colour)
                 self.correct_positions[i] = colour
                 colour_feedback_count[colour] += 1
 
-        # Then update knowledge for mistakes
         for i, (colour, fb) in enumerate(zip(self.current_guess, feedback)):
             if fb == MISTAKE:
                 self.present_colours.add(colour)
@@ -463,7 +323,6 @@ class SystemDecoder:
 
                 colour_feedback_count[colour] += 1
 
-        # Finally, update knowledge for wrong positions
         for i, (colour, fb) in enumerate(zip(self.current_guess, feedback)):
             if fb == WRONG:
                 if colour not in self.present_colours:
@@ -486,57 +345,69 @@ class SystemDecoder:
             if colour in self.unused_colours:
                 self.unused_colours.remove(colour)
 
-        print(f"Present Colours: {self.present_colours}")
-        print(f"Correct Positions: {self.correct_positions}")
-        print(f"Forbidden Positions: {self.forbidden_positions}")
-        print(f"Eliminated Colours: {self.eliminated_colours}")
-        print(f"Unused Colours: {self.unused_colours}")
-        print(f"Completed Colours: {self.completed_colours}")
-
         for colour, count in colour_feedback_count.items():
             self.colour_counts[colour] = max(self.colour_counts[colour], count)
-        print(f"Colour Counts: {self.colour_counts}")
 
         if len(self.present_colours) + len(self.eliminated_colours) == len(
-            COLOUR_OPTIONS
+            AVAILABLE_COLOURS
         ):
             self.discovery_mode = False
-            print("Discovery mode is set to false.")
-
-        print("---")
 
     # -----------------------------------------------------
-    # MAIN LOOP (FOR TESTING)
+    # EVALUATE GUESS - For Algo Testing
     # -----------------------------------------------------
-    def solve(self, secret):
+    def test_evaluate_guess(self, secret, guess):
+
+        feedback = [""] * 5
+
+        secret_remaining = []
+        guess_remaining = []
+        remaining_indices = []
+
+        for i, (s, g) in enumerate(zip(secret, guess)):
+            if s == g:
+                feedback[i] = CORRECT
+            else:
+                secret_remaining.append(s)
+                guess_remaining.append(g)
+                remaining_indices.append(i)
+
+        secret_counter = Counter(secret_remaining)
+
+        for idx, g in zip(remaining_indices, guess_remaining):
+            if secret_counter[g] > 0:
+                feedback[idx] = MISTAKE
+                secret_counter[g] -= 1
+            else:
+                feedback[idx] = WRONG
+
+        return "".join(feedback)
+
+    # -----------------------------------------------------
+    # ALGO TESTING - Main Loop
+    # -----------------------------------------------------
+    def test_algorithm(self, secret):
 
         loop_count = 0
         while True:
             loop_count += 1
             self.current_guess = self.generate_guess()
 
-            current_guess_feedback = evaluate_guess(
+            current_guess_feedback = self.test_evaluate_guess(
                 secret=secret, guess=self.current_guess
-            )
-
-            print(
-                f"Turn {self.turn}: "
-                + f"{self.current_guess}"
-                + f" -> {current_guess_feedback}"
             )
 
             if loop_count > 10:
                 break
 
             if all(f == CORRECT for f in current_guess_feedback):
-                print(f"\nSolved in {self.turn} turns!")
                 break
 
             self.update_knowledge(feedback=current_guess_feedback)
 
 
-# >>> Test
-my_code = ["WHITE", "BLUE", "YELLOW", "BLUE", "BLACK"]
-print(f"My Code: {my_code}")
-decoder = SystemDecoder()
-decoder.solve(my_code)
+# >>> Algorithm Test
+# my_code = [RED, RED, WHITE, GREEN, RED]
+# print(f"My Code: {my_code}")
+# decoder = SystemDecoder()
+# decoder.test_algorithm(my_code)

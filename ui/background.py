@@ -1,9 +1,10 @@
 import logging
+import os
+import sys
 
 from PIL import Image, ImageEnhance, ImageTk
 
 from util.constants import APP_NAME
-from util.logics import handle_assets_path
 
 logger = logging.getLogger(APP_NAME)
 
@@ -41,6 +42,24 @@ def fade_out_and_close(window):
         window.after(15, fade_out_and_close, window)
     else:
         window.destroy()
+
+
+# <<<
+
+
+# >>>
+def handle_assets_path(relative_path: str) -> str:
+    logger.info("Util: Converting relative path to absolute path...")
+
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    absolute_path = os.path.join(base_path, relative_path)
+    logger.info("Util: Converted relative path to absolute path for the asset.")
+
+    return absolute_path
 
 
 # <<<

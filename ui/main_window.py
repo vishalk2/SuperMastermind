@@ -1,10 +1,12 @@
 import customtkinter as ctk
 import logging
-import itertools
 
-from collections import Counter
-
-from util.logics import evaluate_guess, create_colour_code
+from util.logics import (
+    evaluate_guess,
+    create_colour_code,
+    convert_feedback_emojis_to_string,
+)
+from util.system_decoder import SystemDecoder
 from util.constants import *
 from ui.background import load_bg_image_for_canvas
 
@@ -27,10 +29,8 @@ class MainWindow(ctk.CTkFrame):
         self.user_current_guess = None
         self.system_code = []
         self.system_current_guess = None
-        self.system_possible_codes = list(
-            itertools.product(list(COLOUR_MAP.values()), repeat=CODE_LENGTH)
-        )
         self.is_systems_code_revealed = False
+        self.system_decoder = SystemDecoder()
 
         self.current_turn = 0
         self.user_total_turns = 0
@@ -417,6 +417,7 @@ class MainWindow(ctk.CTkFrame):
         self.system_code = []
         self.system_current_guess = None
         self.is_systems_code_revealed = False
+        self.system_decoder = SystemDecoder()
 
         self.current_turn = 0
         self.user_total_turns = 0
@@ -1044,6 +1045,7 @@ class MainWindow(ctk.CTkFrame):
         self.system_code = []
         self.system_current_guess = None
         self.is_systems_code_revealed = False
+        self.system_decoder = SystemDecoder()
 
         self.user_code = []
         self.user_current_guess = None
@@ -1119,7 +1121,6 @@ class MainWindow(ctk.CTkFrame):
                 message=f"Turns taken by you to crack my code: {self.user_total_turns}\n\n"
                 + f"Turns taken by me to crack your code: {self.system_total_turns}",
             )
-            self._add_chat_message(sender=SYSTEM, message=SYSTEM_WINNING_TEXT)
             self._add_chat_message(sender=SYSTEM, message=SYSTEM_TIE_TEXT)
 
         self._add_chat_message(sender=SYSTEM, message=SYSTEM_EXIT_TEXT)
@@ -1215,9 +1216,7 @@ class MainWindow(ctk.CTkFrame):
     # >>>
     def _generate_systems_first_guess(self):
 
-        self.remaining_possible_codes = self.system_possible_codes.copy()
-
-        self.system_current_guess = create_colour_code()
+        self.system_current_guess = self.system_decoder.generate_guess()
 
         self.system_code.append(self.system_current_guess)
 
@@ -1230,11 +1229,7 @@ class MainWindow(ctk.CTkFrame):
     # >>>
     def _generate_systems_next_guess(self):
 
-        if not self.remaining_possible_codes:
-            logger.error("No possible codes left - feedback inconsistency detected!")
-            raise RuntimeError("No possible codes left - feedback inconsistency!")
-
-        self.system_current_guess = self.remaining_possible_codes[0]
+        self.system_current_guess = self.system_decoder.generate_guess()
 
         self.system_code.append(self.system_current_guess)
 
@@ -1712,53 +1707,10 @@ class MainWindow(ctk.CTkFrame):
             self._add_chat_message(sender=SYSTEM, message=SYSTEM_NEXT_PART_TEXT)
             return
 
-        last_guess = self.system_code[self.current_turn - 1]
-        feedback_tuple = self._get_feedback_tuple(
-            secret=self.user_code, guess=last_guess
-        )
-
-        self._filter_possible_codes(last_guess, feedback_tuple)
+        feedback_string = convert_feedback_emojis_to_string(feedback)
+        self.system_decoder.update_knowledge(feedback_string)
 
         self.current_turn = self.current_turn + 1
         self._activate_system_turn()
-
-    # <<<
-
-    # >>>
-    def _filter_possible_codes(self, last_guess, feedback_tuple):
-
-        new_possible_codes = []
-
-        for code in self.remaining_possible_codes:
-
-            if self._get_feedback_tuple(code, last_guess) == feedback_tuple:
-                new_possible_codes.append(code)
-
-        self.remaining_possible_codes = new_possible_codes
-
-    # <<<
-
-    # >>>
-    def _get_feedback_tuple(self, secret, guess):
-
-        correct_position = 0
-        secret_remaining = []
-        guess_remaining = []
-
-        for s, g in zip(secret, guess):
-            if s == g:
-                correct_position += 1
-            else:
-                secret_remaining.append(s)
-                guess_remaining.append(g)
-
-        secret_counter = Counter(secret_remaining)
-        guess_counter = Counter(guess_remaining)
-
-        correct_colour_wrong_position = sum(
-            min(secret_counter[c], guess_counter[c]) for c in secret_counter
-        )
-
-        return (correct_position, correct_colour_wrong_position)
 
     # <<<
