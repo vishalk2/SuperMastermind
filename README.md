@@ -110,7 +110,7 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 
 **Code POV:**
 
-- Rendered from `MainWindow._display_gameplay_screen` in `ui/main_window.py`.
+> - Rendered from `MainWindow._display_gameplay_screen` in `ui/main_window.py`.
 
 
 ### 7. Roles and Turn Transitions
@@ -118,12 +118,16 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
     - If the user chose `SET-CODE` initially:
 	    > - User is prompted to pick colours for the 5-slot code using the UI slot buttons. The code should be a list of 5 colour names.<br>
 	    > - Once the user sets the code and starts, the system will try to guess and decode the code.<br>
+
 <img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/2e76d5cf-a0e1-4a4a-9f43-c1c20a166b08" />
+
 <br>
 
     - If the user chose `DE-CODE`:
 	    > - The system creates a secret code, and the user attempts to decode it by making guesses on the center board.<br>
+
 <img width="1365" height="715" alt="image" src="https://github.com/user-attachments/assets/ea029b0d-9956-4661-90ba-c0d9c9896c33" />
+
 <br>
 
 - Code POV:
@@ -147,16 +151,22 @@ Post the brief interval, the loading screen transitions to the gameplay screen. 
 ### 9. Revealing and End Game
 - UI POV:
     > - If the user clicks on reveal system code early (the UI shows a reveal button), the user loses the game and a message is shown in the chat area.<br>
+
 <img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/9a5f92a7-fa55-4deb-943b-77d71c91759c" />
+
 <br>
 
     > - NOTE: The "View/Hide Code" is only for the user to quickly view and hide the secret code they have set in case they forget their code. It won't reveal the code to the system and won't result in game loss for the user.<br>
+
 <img width="1365" height="716" alt="image" src="https://github.com/user-attachments/assets/03031fd6-f8b4-4ce5-9b00-6ee05bd3a0a6" />
+
 <br>
 
     > - When the code is cracked (all positions correct), the UI shows a success message with the number of turns and the right panel logs the win or tie messages. Whoever decodes the other's code in less moves is declared the winner.<br>
+
 <img width="1365" height="718" alt="image" src="https://github.com/user-attachments/assets/f31439e3-f118-4845-b15c-673136c72fbd" />
 
+<br>
 
     > - If both the user's and the system's turns to decode on another are the same, the game ends in a tie.<br>
 
