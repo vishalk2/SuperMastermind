@@ -15,10 +15,11 @@ def create_colour_code(max_attempts=200):
     logger.info(f"Util: Creating the colour code...")
 
     for attempt in range(max_attempts):
-        k = random.choice([2, 3, 4])
+        k = random.choice([1, 2, 3, 4, 5])
         chosen = random.sample(AVAILABLE_COLOURS, k)
         counts = [1] * k
         remaining = 5 - k
+        logger.info(f"Util: Random choice selected: {k}")
 
         for _ in range(remaining):
             idx = random.randrange(k)
@@ -29,18 +30,18 @@ def create_colour_code(max_attempts=200):
             code += [col] * cnt
         random.shuffle(code)
 
-        if not any(cnt > 1 for cnt in counts):
-            continue
+        # if not any(cnt > 1 for cnt in counts):
+        #     continue
 
-        if is_trivial(code):
-            continue
+        # if is_trivial(code):
+        #     continue
 
         ent = calculate_entropy_for_counts(Counter(code).values(), 5)
         logger.info(
             f"Util: Attempt {attempt+1}: Generated code {code} with entropy {ent}"
         )
-        if ent < 0.8 or ent > 1.9:
-            continue
+        # if ent < 0.8 or ent > 1.95:
+        #     continue
 
         logger.info(f"Util: Created the colour code: {code} at attempt {attempt+1}.")
         return code
@@ -73,9 +74,11 @@ def calculate_entropy_for_counts(counts, length):
 # >>>
 def is_trivial(code):
     if len(set(code)) == 1:
+        logger.info(f"Util: Trivial Code attempted: {code}")
         return True
 
     if code == list(reversed(code)):
+        logger.info(f"Util: Trivial Code attempted: {code}")
         return True
 
     run = 1
@@ -83,6 +86,7 @@ def is_trivial(code):
         if code[i] == code[i - 1]:
             run += 1
             if run >= 4:
+                logger.info(f"Util: Trivial Code attempted: {code}")
                 return True
         else:
             run = 1

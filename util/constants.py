@@ -30,8 +30,29 @@ PURPLE = "#9900FF"
 BROWN = "#6B1700"
 BLACK = "#000000"
 WHITE = "#FFFFFF"
-UNKNOWN = "#666666"
-AVAILABLE_COLOURS = [RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE, BROWN, BLACK, WHITE]
+GREY = "#C0C0C0"
+PINK = "#FF00FF"
+CYAN = "#00FFFF"
+TEAL = "#008080"
+INDIGO = "#480082"
+KHAKI = "#808000"
+AVAILABLE_COLOURS = [
+    RED,
+    ORANGE,
+    YELLOW,
+    GREEN,
+    BLUE,
+    PURPLE,
+    BROWN,
+    BLACK,
+    WHITE,
+    GREY,
+    PINK,
+    CYAN,
+    TEAL,
+    INDIGO,
+    KHAKI
+]
 COLOUR_MAP = {
     "RED": RED,
     "ORANGE": ORANGE,
@@ -42,6 +63,12 @@ COLOUR_MAP = {
     "BROWN": BROWN,
     "BLACK": BLACK,
     "WHITE": WHITE,
+    "GREY": GREY,
+    "PINK": PINK,
+    "CYAN": CYAN,
+    "TEAL": TEAL,
+    "INDIGO": INDIGO,
+    "KHAKI": KHAKI,
 }
 COLOUR_OPTIONS = [
     "RED",
@@ -53,11 +80,16 @@ COLOUR_OPTIONS = [
     "BROWN",
     "BLACK",
     "WHITE",
+    "GREY",
+    "PINK",
+    "CYAN",
+    "TEAL",
+    "INDIGO",
+    "KHAKI"
 ]
 
 # Game Constants
 CODE_LENGTH = 5
-MAX_TURNS_PER_SCREEN = 10
 USER = "YOU"
 SYSTEM = "SYSTEM"
 SET_CODE = "SET-CODE"
@@ -82,7 +114,7 @@ GAME_INSTRUCTIONS = (
     "the other player    tries to decode it. In the second round, the roles are reversed.\n\n"
     "5. The code is made up of a sequence of colors, and the player trying to decode the "
     "code will             receive feedback on their guesses.\n\n"
-    "6. There are a total of 9 colours available, and the secret code consists of 5 slots to fill.\n\n"
+    "6. There are a total of 15 colours available, and the secret code consists of 5 slots to fill.\n\n"
     "7. The feedback for each guess is given in the form of emojis:\n"
     "        > '✅' for correct color in correct position\n"
     "        > '⚠️' for correct color in wrong position\n"

@@ -1,849 +1,601 @@
-18:00:41 - INFO - app.py - START
-18:00:41 - INFO - app.py - App Logger: Logging configuration is complete.
-18:00:41 - INFO - background.py - Background: User has triggered the SuperMastermind.exe application.
-18:00:41 - INFO - background.py - Background: SuperMastermind application has started running.
-18:00:41 - INFO - main_window.py - UI: Main Window instantiated.
-18:00:41 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:00:41 - INFO - main_window.py - UI: Initialized App-state Variables.
-18:00:41 - INFO - main_window.py - UI: Initialized UI Display.
-18:00:41 - INFO - main_window.py - UI Display: Created Game Layout - Main Panel.
-18:00:41 - INFO - main_window.py - ---
-18:00:41 - INFO - main_window.py - UI Handler: Handling home screen display >>>
-18:00:41 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:00:41 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:00:41 - INFO - main_window.py - UI Handler: Completed resetting the App-State Variables.
-18:00:41 - INFO - main_window.py - UI Display: Rendering home screen display...
-18:00:41 - INFO - background.py - UI Background: Loading background image for HOME screen...
-18:00:41 - INFO - background.py - Util: Converting relative path to absolute path...
-18:00:41 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:00:41 - INFO - background.py - UI Background: Loaded background image for HOME screen.
-18:00:41 - INFO - main_window.py - UI Display: Loaded home screen content area.
-18:00:41 - INFO - main_window.py - UI Display: Completed rendering home screen display.
-18:00:41 - INFO - main_window.py - UI Display: Displaying home screen.
-18:00:42 - INFO - main_window.py - UI Handler: Completed handling home screen display <<<
-18:00:42 - INFO - main_window.py - ---
-18:02:31 - INFO - main_window.py - ---
-18:02:31 - INFO - main_window.py - UI Handler: User has clicked the 'READ INSTRUCTIONS' button on home screen.
-18:02:31 - INFO - main_window.py - UI Handler: Handling instructions screen display >>>
-18:02:31 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:02:31 - INFO - main_window.py - UI Display: Rendering instructions screen display...
-18:02:31 - INFO - background.py - UI Background: Loading background image for INSTRUCTIONS screen...
-18:02:31 - INFO - background.py - Util: Converting relative path to absolute path...
-18:02:31 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:02:31 - INFO - background.py - UI Background: Loaded background image for INSTRUCTIONS screen.
-18:02:31 - INFO - main_window.py - UI Display: Loaded instructions screen content area.
-18:02:31 - INFO - main_window.py - UI Display: Completed rendering instructions screen display.
-18:02:31 - INFO - main_window.py - UI Display: Displaying instructions screen.
-18:02:33 - INFO - main_window.py - UI Handler: Completed handling instructions screen display <<<
-18:02:33 - INFO - main_window.py - ---
-18:03:07 - INFO - main_window.py - ---
-18:03:07 - INFO - main_window.py - UI Handler: User has clicked the BACK button on Instructions screento navigate to home screen.
-18:03:07 - INFO - main_window.py - UI Handler: Handling home screen display >>>
-18:03:07 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:03:07 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:03:07 - INFO - main_window.py - UI Handler: Completed resetting the App-State Variables.
-18:03:07 - INFO - main_window.py - UI Display: Rendering home screen display...
-18:03:07 - INFO - background.py - UI Background: Loading background image for HOME screen...
-18:03:07 - INFO - background.py - Util: Converting relative path to absolute path...
-18:03:07 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:03:07 - INFO - background.py - UI Background: Loaded background image for HOME screen.
-18:03:07 - INFO - main_window.py - UI Display: Loaded home screen content area.
-18:03:07 - INFO - main_window.py - UI Display: Completed rendering home screen display.
-18:03:07 - INFO - main_window.py - UI Display: Displaying home screen.
-18:03:08 - INFO - main_window.py - UI Handler: Completed handling home screen display <<<
-18:03:08 - INFO - main_window.py - ---
-18:03:09 - INFO - main_window.py - ---
-18:03:09 - INFO - main_window.py - UI Handler: User has clicked the 'NEW GAME' button on home screen.
-18:03:09 - INFO - main_window.py - UI Handler: Handling choose task screen display >>>
-18:03:09 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:03:09 - INFO - main_window.py - UI Display: Rendering choose task screen display...
-18:03:09 - INFO - background.py - UI Background: Loading background image for CHOOSE TASK screen...
-18:03:09 - INFO - background.py - Util: Converting relative path to absolute path...
-18:03:09 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:03:09 - INFO - background.py - UI Background: Loaded background image for CHOOSE TASK screen.
-18:03:09 - INFO - main_window.py - UI Display: Loaded choose task screen content area.
-18:03:09 - INFO - main_window.py - UI Display: Completed rendering choose task screen display.
-18:03:09 - INFO - main_window.py - UI Display: Displaying choose task screen.
-18:03:10 - INFO - main_window.py - UI Handler: Completed handling choose task screen display <<<
-18:03:10 - INFO - main_window.py - ---
-18:03:42 - INFO - main_window.py - UI Handler: User has selected SET-CODE option on choose task screen.
-18:03:42 - INFO - main_window.py - UI Handler: User's Role: SET-CODE | System's Role: DE-CODE
-18:03:42 - INFO - main_window.py - ---
-18:03:42 - INFO - main_window.py - UI Handler: Handling gameplay load screen display >>>
-18:03:42 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:03:42 - INFO - main_window.py - UI Display: Rendering gameplay load screen display...
-18:03:42 - INFO - main_window.py - UI Display: Completed rendering gameplay load screen display.
-18:03:42 - INFO - main_window.py - UI Display: Displaying gameplay load screen.
-18:03:42 - INFO - main_window.py - UI Handler: Completed handling gameplay load screen display <<<
-18:03:42 - INFO - main_window.py - ---
-18:03:47 - INFO - main_window.py - ---
-18:03:47 - INFO - main_window.py - UI Handler: Handling gameplay screen display >>>
-18:03:47 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:03:47 - INFO - main_window.py - UI Display: Rendering gameplay screen display...
-18:03:47 - INFO - main_window.py - UI Display: Creating left panel (screen A) on gameplay screen...
-18:03:48 - INFO - main_window.py - UI Display: Completed rendering the left panel (screen A) on gameplay screen.
-18:03:48 - INFO - main_window.py - UI Display: Creating center board (screen B) on gameplay screen...
-18:03:48 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: SYSTEM...
-18:03:48 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
-18:03:48 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:03:48 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for user.
-18:03:48 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:03:48 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
-18:03:48 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
-18:03:48 - INFO - main_window.py - UI Display: Completed rendering the center board (screen B) on gameplay screen.
-18:03:48 - INFO - main_window.py - UI Display: Creating right panel (screen C) on gameplay screen...
-18:03:48 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:03:48 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: So Mr. Player, welcome to SuperMastermind.
+11:51:46 - INFO - app.py - START
+11:51:46 - INFO - app.py - App Logger: Logging configuration is complete.
+11:51:46 - INFO - background.py - Background: User has triggered the SuperMastermind.exe application.
+11:51:46 - INFO - background.py - Background: SuperMastermind application has started running.
+11:51:46 - INFO - main_window.py - UI: Main Window instantiated.
+11:51:46 - INFO - system_decoder.py - Util: SystemDecoder initialized.
+11:51:46 - INFO - main_window.py - UI: Initialized App-state Variables.
+11:51:46 - INFO - main_window.py - UI: Initialized UI Display.
+11:51:46 - INFO - main_window.py - UI Display: Created Game Layout - Main Panel.
+11:51:46 - INFO - main_window.py - ---
+11:51:46 - INFO - main_window.py - UI Handler: Handling home screen display >>>
+11:51:46 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
+11:51:46 - INFO - system_decoder.py - Util: SystemDecoder initialized.
+11:51:46 - INFO - main_window.py - UI Handler: Completed resetting the App-State Variables.
+11:51:46 - INFO - main_window.py - UI Display: Rendering home screen display...
+11:51:46 - INFO - background.py - UI Background: Loading background image for HOME screen...
+11:51:46 - INFO - background.py - Util: Converting relative path to absolute path...
+11:51:46 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
+11:51:46 - INFO - background.py - UI Background: Loaded background image for HOME screen.
+11:51:46 - INFO - main_window.py - UI Display: Loaded home screen content area.
+11:51:46 - INFO - main_window.py - UI Display: Completed rendering home screen display.
+11:51:46 - INFO - main_window.py - UI Display: Displaying home screen.
+11:51:47 - INFO - main_window.py - UI Handler: Completed handling home screen display <<<
+11:51:47 - INFO - main_window.py - ---
+11:51:49 - INFO - main_window.py - ---
+11:51:49 - INFO - main_window.py - UI Handler: User has clicked the 'NEW GAME' button on home screen.
+11:51:49 - INFO - main_window.py - UI Handler: Handling choose task screen display >>>
+11:51:49 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
+11:51:49 - INFO - main_window.py - UI Display: Rendering choose task screen display...
+11:51:49 - INFO - background.py - UI Background: Loading background image for CHOOSE TASK screen...
+11:51:49 - INFO - background.py - Util: Converting relative path to absolute path...
+11:51:49 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
+11:51:49 - INFO - background.py - UI Background: Loaded background image for CHOOSE TASK screen.
+11:51:49 - INFO - main_window.py - UI Display: Loaded choose task screen content area.
+11:51:49 - INFO - main_window.py - UI Display: Completed rendering choose task screen display.
+11:51:49 - INFO - main_window.py - UI Display: Displaying choose task screen.
+11:51:50 - INFO - main_window.py - UI Handler: Completed handling choose task screen display <<<
+11:51:50 - INFO - main_window.py - ---
+11:51:53 - INFO - main_window.py - UI Handler: User has selected DE-CODE option on choose task screen.
+11:51:53 - INFO - main_window.py - UI Handler: User's Role: DE-CODE | System's Role: SET-CODE
+11:51:53 - INFO - main_window.py - ---
+11:51:53 - INFO - main_window.py - UI Handler: Handling gameplay load screen display >>>
+11:51:53 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
+11:51:53 - INFO - main_window.py - UI Display: Rendering gameplay load screen display...
+11:51:53 - INFO - main_window.py - UI Display: Completed rendering gameplay load screen display.
+11:51:53 - INFO - main_window.py - UI Display: Displaying gameplay load screen.
+11:51:53 - INFO - main_window.py - UI Handler: Completed handling gameplay load screen display <<<
+11:51:53 - INFO - main_window.py - ---
+11:51:58 - INFO - main_window.py - ---
+11:51:58 - INFO - main_window.py - UI Handler: Handling gameplay screen display >>>
+11:51:58 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
+11:51:58 - INFO - main_window.py - UI Display: Rendering gameplay screen display...
+11:51:58 - INFO - main_window.py - UI Display: Creating left panel (screen A) on gameplay screen...
+11:51:58 - INFO - main_window.py - UI Display: Completed rendering the left panel (screen A) on gameplay screen.
+11:51:58 - INFO - main_window.py - UI Display: Creating center board (screen B) on gameplay screen...
+11:51:58 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: YOU...
+11:51:58 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
+11:51:58 - INFO - main_window.py - UI Display: Created turn-label for Header.
+11:51:58 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for system.
+11:51:58 - INFO - main_window.py - UI Display: Created turn-label for Header.
+11:51:58 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
+11:51:58 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
+11:51:58 - INFO - main_window.py - UI Display: Completed rendering the center board (screen B) on gameplay screen.
+11:51:58 - INFO - main_window.py - UI Display: Creating right panel (screen C) on gameplay screen...
+11:51:58 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:51:58 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: So Mr. Player, welcome to SuperMastermind.
 Since neither of us wants to waste our time, let's get started.
 Click on the 'START' button to start.
-18:03:48 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:03:48 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:03:48 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Since you have chosen to set code first,
-you will set the code first, and I will start decoding once you're ready.
-18:03:48 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:03:48 - INFO - main_window.py - UI Display: Completed rendering the right panel (screen C) on gameplay screen.
-18:03:48 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:03:48 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: At any point in time during the game,
+11:51:58 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:51:58 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:51:58 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Since you have chosen to decode first,
+I will set the code first, and you can start decoding once I'm ready.
+11:51:58 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:51:58 - INFO - main_window.py - UI Display: Completed rendering the right panel (screen C) on gameplay screen.
+11:51:58 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:51:58 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: At any point in time during the game,
 if you want to be a LOSER and want to exit the game, click on the EXIT button below.
-18:03:48 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:03:48 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:03:48 - INFO - main_window.py - UI Display: Sender: YOU | Message: Sure bro. Let's get started.
+11:51:58 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:51:58 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:51:58 - INFO - main_window.py - UI Display: Sender: YOU | Message: Sure bro. Let's get started.
 I ain't quitting without winning. You better don't whine after I win.
-18:03:48 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:03:48 - INFO - main_window.py - UI Display: Completed rendering gameplay screen display.
-18:03:48 - INFO - main_window.py - UI Display: Displaying gameplay screen.
-18:03:48 - INFO - main_window.py - UI Handler: Completed handling gameplay screen display <<<
-18:03:48 - INFO - main_window.py - ---
-18:06:38 - INFO - main_window.py - ---
-18:06:38 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
-18:06:38 - INFO - main_window.py - Gameflow Handler: Current User Role: SET-CODE
-18:06:38 - INFO - main_window.py - Gameflow Handler: Current System Role: DE-CODE
-18:06:38 - INFO - main_window.py - Gameflow Handler: Starting system decode game.
-18:06:38 - INFO - main_window.py - Gameflow Handler: Handling User's start set-code | System's start decode game...
-18:06:38 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
-18:06:38 - INFO - main_window.py - User Gameplay: Enabling User's Header row peg slot buttons...
-18:06:38 - INFO - main_window.py - User Gameplay: Enabled User's header row peg slot buttons.
-18:06:38 - INFO - main_window.py - User Gameplay: Enabled the header row peg slot buttons for user to fill colours.
-18:06:38 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:06:38 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Yo Noob! You can SET CODE now.
-Let's see how many turns I take to crack it.
-18:06:38 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:06:38 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:06:38 - INFO - main_window.py - UI Display: Sender: YOU | Message: You ain't cracking my code, Noobie.
-Not now. Now in an eternity! Keep whining.
-18:06:38 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:06:38 - INFO - main_window.py - Gameflow Handler: Completed handling User's start set-code | System's start decode game.
-18:06:38 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
-18:06:38 - INFO - main_window.py - ---
-18:06:40 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the header slot.
-18:06:41 - INFO - main_window.py - User Gameplay: User has set RED colour in Peg-1 in the header slot.
-18:06:41 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:06:41 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:06:42 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the header slot.
-18:06:43 - INFO - main_window.py - User Gameplay: User has set YELLOW colour in Peg-2 in the header slot.
-18:06:43 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:06:43 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:06:44 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the header slot.
-18:06:45 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-3 in the header slot.
-18:06:45 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:06:45 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:06:46 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the header slot.
-18:07:29 - INFO - main_window.py - User Gameplay: User has set BLUE colour in Peg-4 in the header slot.
-18:07:29 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:07:29 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:07:29 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the header slot.
-18:07:31 - INFO - main_window.py - User Gameplay: User has set BLACK colour in Peg-5 in the header slot.
-18:07:31 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:07:31 - INFO - main_window.py - User Gameplay: Header slot is filled.
-18:07:31 - INFO - main_window.py - User Gameplay:  User's Header Slot Button Colors: ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:07:31 - INFO - main_window.py - User Gameplay: Enabled the 'ENCRYPT CODE' button for user's header slot.
-18:07:34 - INFO - main_window.py - User Gameplay: Encrypting the User's code...
-18:07:34 - INFO - main_window.py - User Gameplay: Enabled 'VIEW CODE' button to view User's Code.
-18:07:34 - INFO - main_window.py - User Gameplay: Completed encrypting the User's code.
-18:07:34 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 1
-18:07:34 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 1...
-18:07:34 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
-18:07:34 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:07:34 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
-18:07:34 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 1
-18:07:34 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:07:34 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:07:34 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#000000', '#9900FF', '#6B1700', '#0048FF', '#04FF00'].
-18:07:34 - INFO - main_window.py - System Gameplay: Generated system's first guess: ['#000000', '#9900FF', '#6B1700', '#0048FF', '#04FF00']
-18:07:34 - INFO - main_window.py - System Gameplay: Current Turn: 1| System's Guess: ['#000000', '#9900FF', '#6B1700', '#0048FF', '#04FF00']
-18:07:34 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:07:34 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:07:37 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:07:37 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:07:37 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:07:37 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:07:37 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ⚠️❌❌✅⚠️
-18:07:37 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:07:37 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 1
-
-Feedback to your guess: ⚠️❌❌✅⚠️
-18:07:37 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:07:37 - INFO - logics.py - Util: Converted feedback emojis to string format: ⚠️❌❌✅⚠️ to MNNYM
-18:07:37 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 2
-18:07:37 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 2...
-18:07:37 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
-18:07:37 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:07:37 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
-18:07:37 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 2
-18:07:37 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:07:37 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:07:37 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#04FF00', '#000000', '#F6FF00', '#0048FF', '#FFFFFF'].
-18:07:37 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#04FF00', '#000000', '#F6FF00', '#0048FF', '#FFFFFF']
-18:07:37 - INFO - main_window.py - System Gameplay: Current Turn: 2| System's Guess: ['#04FF00', '#000000', '#F6FF00', '#0048FF', '#FFFFFF']
-18:07:37 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:07:37 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:08:47 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:08:47 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:08:47 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:08:47 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:08:47 - INFO - main_window.py - Validation Handler: Turn: 2 | Feedback: ⚠️⚠️⚠️✅❌
-18:08:47 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:08:47 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 2
-
-Feedback to your guess: ⚠️⚠️⚠️✅❌
-18:08:47 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:08:47 - INFO - logics.py - Util: Converted feedback emojis to string format: ⚠️⚠️⚠️✅❌ to MMMYN
-18:08:47 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 3
-18:08:47 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 3...
-18:08:47 - INFO - main_window.py - UI Display: Created turn-label for turn number: 3
-18:08:47 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:08:47 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 3
-18:08:47 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 3
-18:08:47 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:08:47 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:08:47 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF0000', '#04FF00', '#000000', '#0048FF', '#F6FF00'].
-18:08:47 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#FF0000', '#04FF00', '#000000', '#0048FF', '#F6FF00']
-18:08:47 - INFO - main_window.py - System Gameplay: Current Turn: 3| System's Guess: ['#FF0000', '#04FF00', '#000000', '#0048FF', '#F6FF00']
-18:08:47 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:08:47 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:08:48 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:08:48 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:08:48 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:08:48 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:08:48 - INFO - main_window.py - Validation Handler: Turn: 3 | Feedback: ✅⚠️⚠️✅⚠️
-18:08:48 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:08:48 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 3
-
-Feedback to your guess: ✅⚠️⚠️✅⚠️
-18:08:48 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:08:48 - INFO - logics.py - Util: Converted feedback emojis to string format: ✅⚠️⚠️✅⚠️ to YMMYM
-18:08:48 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 4
-18:08:48 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 4...
-18:08:49 - INFO - main_window.py - UI Display: Created turn-label for turn number: 4
-18:08:49 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:08:49 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 4
-18:08:49 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 4
-18:08:49 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:08:49 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:08:49 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000'].
-18:08:49 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:08:49 - INFO - main_window.py - System Gameplay: Current Turn: 4| System's Guess: ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:08:49 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:08:49 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:08:50 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:08:50 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:08:50 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:08:50 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:08:50 - INFO - main_window.py - Validation Handler: Turn: 4 | Feedback: ✅✅✅✅✅
-18:08:50 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:08:50 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 4
-
-Feedback to your guess: ✅✅✅✅✅
-18:08:50 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:08:50 - INFO - main_window.py - User Gameplay: System has cracked the user's code.
-18:08:50 - INFO - main_window.py - User Gameplay: Displayed the User's Code: ['#FF0000', '#F6FF00', '#04FF00', '#0048FF', '#000000']
-18:08:50 - INFO - main_window.py - User Gameplay: Disabled the additional button in the User's Header slot.
-18:08:50 - INFO - main_window.py - User Gameplay: Completed handling user code after system decode.
-18:08:50 - INFO - main_window.py - Validation Handler: Number of turns taken by system to crack the code: 4
-18:08:50 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:08:50 - INFO - main_window.py - UI Display: Sender: YOU | Message: Well Noobie! Good for you.
-You finally were able to crack it. Not bad, huh!
-18:08:50 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:08:50 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:08:50 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Time to move on to next step.
-We swap our turns now. Click on the 'NEXT' button to begin.
-Then, click on SET/START as you see fit.
-18:08:50 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:10:29 - INFO - main_window.py - ---
-18:10:29 - INFO - main_window.py - Gameflow Handler: Handling gameplay transition...
-18:10:29 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:10:29 - INFO - main_window.py - Gameflow Handler: Completed refreshing gameplay variables.
-18:10:29 - INFO - main_window.py - Gameflow Handler: User's SET-CODE role complete.
-18:10:29 - INFO - main_window.py - Gameflow Handler: Turns taken by System to crack User's Code: 4
-18:10:29 - INFO - main_window.py - UI Handler: Clearing all widgets in Screen-B Board...
-18:10:30 - INFO - main_window.py - UI Handler: Completed clearing Screen-B Board.
-18:10:30 - INFO - main_window.py - UI Handler: Swapping 'USER' and 'SYSTEM' labels on Screen-A...
-18:10:30 - INFO - main_window.py - UI Handler: Completed swapping 'USER' and 'SYSTEM' labels on Screen-A.
-18:10:30 - INFO - main_window.py - Gameflow Handler: User's next role: DE-CODE.
-18:10:30 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: YOU...
-18:10:30 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
-18:10:30 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:10:30 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for system.
-18:10:30 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:10:30 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
-18:10:30 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
-18:10:30 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay transition.
-18:10:30 - INFO - main_window.py - ---
-18:10:33 - INFO - main_window.py - ---
-18:10:34 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
-18:10:34 - INFO - main_window.py - Gameflow Handler: Current User Role: DE-CODE
-18:10:34 - INFO - main_window.py - Gameflow Handler: Current System Role: SET-CODE
-18:10:34 - INFO - main_window.py - Gameflow Handler: Starting user decode game.
-18:10:34 - INFO - main_window.py - Gameflow Handler: Handling User's start decode | System's start set-code game...
-18:10:34 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
-18:10:34 - INFO - logics.py - Util: Creating the colour code...
-18:10:34 - INFO - logics.py - Util: Attempt 2: Generated code ['#9900FF', '#F6FF00', '#FFFFFF', '#F6FF00', '#04FF00'] with entropy 1.9219280948873623
-18:10:34 - INFO - logics.py - Util: Attempt 3: Generated code ['#F6FF00', '#0048FF', '#04FF00', '#04FF00', '#FF6F00'] with entropy 1.9219280948873623
-18:10:34 - INFO - logics.py - Util: Attempt 4: Generated code ['#04FF00', '#0048FF', '#04FF00', '#F6FF00', '#FF6F00'] with entropy 1.9219280948873623
-18:10:34 - INFO - logics.py - Util: Attempt 5: Generated code ['#000000', '#0048FF', '#6B1700', '#000000', '#FF6F00'] with entropy 1.9219280948873623
-18:10:34 - INFO - logics.py - Util: Attempt 6: Generated code ['#6B1700', '#6B1700', '#FF6F00', '#0048FF', '#9900FF'] with entropy 1.9219280948873623
-18:10:34 - INFO - logics.py - Util: Attempt 7: Generated code ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00'] with entropy 1.5219280948873621
-18:10:34 - INFO - logics.py - Util: Created the colour code: ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00'] at attempt 7.
-18:10:34 - INFO - main_window.py - System Gameplay: System has set ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00'] as the code for user to crack.
-18:10:34 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:10:34 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: I have set the secret code. Do you have what it takes to crack it?
+11:51:58 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:51:58 - INFO - main_window.py - UI Display: Completed rendering gameplay screen display.
+11:51:58 - INFO - main_window.py - UI Display: Displaying gameplay screen.
+11:51:58 - INFO - main_window.py - UI Handler: Completed handling gameplay screen display <<<
+11:51:58 - INFO - main_window.py - ---
+11:52:02 - INFO - main_window.py - ---
+11:52:02 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
+11:52:02 - INFO - main_window.py - Gameflow Handler: Current User Role: DE-CODE
+11:52:02 - INFO - main_window.py - Gameflow Handler: Current System Role: SET-CODE
+11:52:02 - INFO - main_window.py - Gameflow Handler: Starting user decode game.
+11:52:02 - INFO - main_window.py - Gameflow Handler: Handling User's start decode | System's start set-code game...
+11:52:02 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
+11:52:02 - INFO - logics.py - Util: Creating the colour code...
+11:52:02 - INFO - logics.py - Util: Random choice selected: 2
+11:52:02 - INFO - logics.py - Util: Attempt 1: Generated code ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF'] with entropy 0.7219280948873623
+11:52:02 - INFO - logics.py - Util: Created the colour code: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF'] at attempt 1.
+11:52:02 - INFO - main_window.py - System Gameplay: System has set ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF'] as the code for user to crack.
+11:52:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:02 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: I have set the secret code. Do you have what it takes to crack it?
 Then go ahead and show me what SuperMastermind you are! Noob ;)
-18:10:34 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:10:34 - INFO - main_window.py - UI Handler: Enabling System-Header 'REVEAL CODE' button. 
-18:10:34 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:10:34 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Oh by the way, if you click
+11:52:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:02 - INFO - main_window.py - UI Handler: Enabling System-Header 'REVEAL CODE' button. 
+11:52:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:02 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Oh by the way, if you click
 on the 'REVEAL CODE ▶' button at any point of time in the game before you crack my code, you LOSE.
 Want to be a Noob? Go ahead and click on 'REVEAL CODE ▶' ;)
-18:10:34 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:10:34 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:10:34 - INFO - main_window.py - UI Display: Sender: YOU | Message: Who you calling a Noob, you Noobie?
+11:52:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:02 - INFO - main_window.py - UI Display: Sender: YOU | Message: Who you calling a Noob, you Noobie?
 I thought I already told I ain't quitting without winning. Don't whine from now itself. Lol.
-18:10:34 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:10:34 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 1
-18:10:34 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 1...
-18:10:34 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
-18:10:34 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:10:34 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
-18:10:34 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 1
-18:10:34 - INFO - main_window.py - User Gameplay: Code set by system: ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00']
-18:10:34 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:10:34 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 1
-18:10:34 - INFO - main_window.py - Gameflow Handler: Completed handling User's start decode | System's start set-code game.
-18:10:34 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
-18:10:34 - INFO - main_window.py - ---
-18:10:57 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
-18:10:59 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-1 in the current slot.
-18:10:59 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:10:59 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:10:59 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
-18:11:01 - INFO - main_window.py - User Gameplay: User has set BLUE colour in Peg-2 in the current slot.
-18:11:01 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:11:01 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:11:02 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
-18:11:53 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-3 in the current slot.
-18:11:53 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:11:53 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:11:54 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
-18:11:55 - INFO - main_window.py - User Gameplay: User has set BLUE colour in Peg-4 in the current slot.
-18:11:55 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:11:55 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:11:56 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
-18:11:57 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-5 in the current slot.
-18:11:57 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:11:57 - INFO - main_window.py - User Gameplay: Current slot is filled.
-18:11:57 - INFO - main_window.py - User Gameplay: Current Turn: 1 | Slot Button Colors filled by user: ['#FF6F00', '#0048FF', '#FF6F00', '#0048FF', '#FF6F00']
-18:11:57 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
-18:11:58 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:11:58 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:11:58 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:11:58 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:11:58 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ❌✅❌⚠️❌
-18:11:58 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:11:58 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 1
+11:52:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:02 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 1
+11:52:02 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 1...
+11:52:02 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
+11:52:02 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
+11:52:02 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
+11:52:02 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 1
+11:52:02 - INFO - main_window.py - User Gameplay: Code set by system: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:52:02 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
+11:52:02 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 1
+11:52:02 - INFO - main_window.py - Gameflow Handler: Completed handling User's start decode | System's start set-code game.
+11:52:02 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
+11:52:02 - INFO - main_window.py - ---
+11:52:04 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
+11:52:05 - INFO - main_window.py - User Gameplay: User has set RED colour in Peg-1 in the current slot.
+11:52:05 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:05 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:05 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
+11:52:06 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-2 in the current slot.
+11:52:06 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:06 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:06 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:52:08 - INFO - main_window.py - User Gameplay: User has set YELLOW colour in Peg-3 in the current slot.
+11:52:08 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:08 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:08 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:52:09 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-4 in the current slot.
+11:52:09 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:09 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:10 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
+11:52:11 - INFO - main_window.py - User Gameplay: User has set BLUE colour in Peg-5 in the current slot.
+11:52:11 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:11 - INFO - main_window.py - User Gameplay: Current slot is filled.
+11:52:11 - INFO - main_window.py - User Gameplay: Current Turn: 1 | Slot Button Colors filled by user: ['#FF0000', '#FF6F00', '#F6FF00', '#04FF00', '#0048FF']
+11:52:11 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
+11:52:11 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
+11:52:11 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
+11:52:11 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:52:11 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:52:11 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ❌❌❌❌❌
+11:52:11 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:11 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 1
 
-Feedback to your guess: ❌✅❌⚠️❌
-18:11:58 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:11:58 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 2
-18:11:58 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 2...
-18:11:58 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
-18:11:58 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:11:58 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
-18:11:58 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 2
-18:11:58 - INFO - main_window.py - User Gameplay: Code set by system: ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00']
-18:11:58 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:11:58 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 2
-18:12:05 - INFO - main_window.py - User Gameplay: User has clicked the System's 'REVEAL CODE' button.
-18:12:05 - INFO - main_window.py - User Gameplay: Revealed the System's Code: ['#0048FF', '#0048FF', '#F6FF00', '#000000', '#F6FF00']
-18:12:05 - INFO - main_window.py - ---
-18:12:05 - INFO - main_window.py - Gameflow Handler: Handling gameplay ending...
-18:12:05 - INFO - main_window.py - System Slots: {'btn1': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton>, 'btn2': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton2>, 'btn3': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton3>, 'btn4': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton4>, 'btn5': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton5>, 'add_btn': <customtkinter.windows.widgets.ctk_button.CTkButton object .!mainwindow.!ctkframe.!ctkframe.!ctkframe2.!ctkframe2.!ctkframe.!ctkframe2.!ctkframe.!ctkbutton6>}
-18:12:05 - INFO - main_window.py - Gameflow Handler: Disabled the 'REVEAL CODE' button.
-18:12:05 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button.
-18:12:05 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:12:05 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:12:05 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:12:05 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: So you've done it, heh.
-I knew you were a Noob. Couldn't crack my Code? Accept it or not, I WIN!
-This is GAME OVER! Now click on EXIT & GO HOME Noob.
-Come back when you are ready! Hehe.
-18:12:05 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:12:05 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:12:05 - INFO - main_window.py - UI Display: Sender: YOU | Message: I may have lost this game. But I'll be back.
-Watch out for me, you noobie!
-18:12:05 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:12:05 - INFO - main_window.py - Gameflow Handler: Declared the SYSTEM as WINNER.
-18:12:05 - INFO - main_window.py - Gameflow Handler: GAME ENDED.
-18:13:17 - INFO - main_window.py - ---
-18:13:17 - INFO - main_window.py - UI Handler: User has clicked the EXIT ▶ button on Gameplay screento navigate to home screen.
-18:13:17 - INFO - main_window.py - UI Handler: Handling home screen display >>>
-18:13:17 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:13:17 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:13:17 - INFO - main_window.py - UI Handler: Completed resetting the App-State Variables.
-18:13:17 - INFO - main_window.py - UI Display: Rendering home screen display...
-18:13:17 - INFO - background.py - UI Background: Loading background image for HOME screen...
-18:13:17 - INFO - background.py - Util: Converting relative path to absolute path...
-18:13:17 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:13:19 - INFO - background.py - UI Background: Loaded background image for HOME screen.
-18:13:19 - INFO - main_window.py - UI Display: Loaded home screen content area.
-18:13:19 - INFO - main_window.py - UI Display: Completed rendering home screen display.
-18:13:19 - INFO - main_window.py - UI Display: Displaying home screen.
-18:13:20 - INFO - main_window.py - UI Handler: Completed handling home screen display <<<
-18:13:20 - INFO - main_window.py - ---
-18:13:20 - INFO - main_window.py - ---
-18:13:20 - INFO - main_window.py - UI Handler: User has clicked the 'NEW GAME' button on home screen.
-18:13:20 - INFO - main_window.py - UI Handler: Handling choose task screen display >>>
-18:13:20 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:13:20 - INFO - main_window.py - UI Display: Rendering choose task screen display...
-18:13:20 - INFO - background.py - UI Background: Loading background image for CHOOSE TASK screen...
-18:13:20 - INFO - background.py - Util: Converting relative path to absolute path...
-18:13:20 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
-18:13:21 - INFO - background.py - UI Background: Loaded background image for CHOOSE TASK screen.
-18:13:21 - INFO - main_window.py - UI Display: Loaded choose task screen content area.
-18:13:21 - INFO - main_window.py - UI Display: Completed rendering choose task screen display.
-18:13:21 - INFO - main_window.py - UI Display: Displaying choose task screen.
-18:13:22 - INFO - main_window.py - UI Handler: Completed handling choose task screen display <<<
-18:13:22 - INFO - main_window.py - ---
-18:13:23 - INFO - main_window.py - UI Handler: User has selected SET-CODE option on choose task screen.
-18:13:23 - INFO - main_window.py - UI Handler: User's Role: SET-CODE | System's Role: DE-CODE
-18:13:23 - INFO - main_window.py - ---
-18:13:23 - INFO - main_window.py - UI Handler: Handling gameplay load screen display >>>
-18:13:23 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:13:23 - INFO - main_window.py - UI Display: Rendering gameplay load screen display...
-18:13:23 - INFO - main_window.py - UI Display: Completed rendering gameplay load screen display.
-18:13:23 - INFO - main_window.py - UI Display: Displaying gameplay load screen.
-18:13:23 - INFO - main_window.py - UI Handler: Completed handling gameplay load screen display <<<
-18:13:23 - INFO - main_window.py - ---
-18:13:28 - INFO - main_window.py - ---
-18:13:28 - INFO - main_window.py - UI Handler: Handling gameplay screen display >>>
-18:13:28 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
-18:13:28 - INFO - main_window.py - UI Display: Rendering gameplay screen display...
-18:13:28 - INFO - main_window.py - UI Display: Creating left panel (screen A) on gameplay screen...
-18:13:28 - INFO - main_window.py - UI Display: Completed rendering the left panel (screen A) on gameplay screen.
-18:13:28 - INFO - main_window.py - UI Display: Creating center board (screen B) on gameplay screen...
-18:13:28 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: SYSTEM...
-18:13:28 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
-18:13:28 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:13:28 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for user.
-18:13:28 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:13:28 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
-18:13:28 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
-18:13:28 - INFO - main_window.py - UI Display: Completed rendering the center board (screen B) on gameplay screen.
-18:13:28 - INFO - main_window.py - UI Display: Creating right panel (screen C) on gameplay screen...
-18:13:28 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:28 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: So Mr. Player, welcome to SuperMastermind.
-Since neither of us wants to waste our time, let's get started.
-Click on the 'START' button to start.
-18:13:28 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:28 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:28 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Since you have chosen to set code first,
-you will set the code first, and I will start decoding once you're ready.
-18:13:28 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:28 - INFO - main_window.py - UI Display: Completed rendering the right panel (screen C) on gameplay screen.
-18:13:28 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:28 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: At any point in time during the game,
-if you want to be a LOSER and want to exit the game, click on the EXIT button below.
-18:13:28 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:28 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:28 - INFO - main_window.py - UI Display: Sender: YOU | Message: Sure bro. Let's get started.
-I ain't quitting without winning. You better don't whine after I win.
-18:13:28 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:28 - INFO - main_window.py - UI Display: Completed rendering gameplay screen display.
-18:13:28 - INFO - main_window.py - UI Display: Displaying gameplay screen.
-18:13:28 - INFO - main_window.py - UI Handler: Completed handling gameplay screen display <<<
-18:13:28 - INFO - main_window.py - ---
-18:13:30 - INFO - main_window.py - ---
-18:13:30 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
-18:13:30 - INFO - main_window.py - Gameflow Handler: Current User Role: SET-CODE
-18:13:30 - INFO - main_window.py - Gameflow Handler: Current System Role: DE-CODE
-18:13:30 - INFO - main_window.py - Gameflow Handler: Starting system decode game.
-18:13:30 - INFO - main_window.py - Gameflow Handler: Handling User's start set-code | System's start decode game...
-18:13:30 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
-18:13:30 - INFO - main_window.py - User Gameplay: Enabling User's Header row peg slot buttons...
-18:13:30 - INFO - main_window.py - User Gameplay: Enabled User's header row peg slot buttons.
-18:13:30 - INFO - main_window.py - User Gameplay: Enabled the header row peg slot buttons for user to fill colours.
-18:13:30 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:30 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Yo Noob! You can SET CODE now.
-Let's see how many turns I take to crack it.
-18:13:30 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:30 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:30 - INFO - main_window.py - UI Display: Sender: YOU | Message: You ain't cracking my code, Noobie.
-Not now. Now in an eternity! Keep whining.
-18:13:30 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:30 - INFO - main_window.py - Gameflow Handler: Completed handling User's start set-code | System's start decode game.
-18:13:30 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
-18:13:30 - INFO - main_window.py - ---
-18:13:31 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the header slot.
-18:13:32 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-1 in the header slot.
-18:13:32 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:13:32 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:13:33 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the header slot.
-18:13:34 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-2 in the header slot.
-18:13:34 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:13:34 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:13:35 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the header slot.
-18:13:36 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-3 in the header slot.
-18:13:36 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:13:36 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:13:37 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the header slot.
-18:13:38 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-4 in the header slot.
-18:13:38 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:13:38 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
-18:13:38 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the header slot.
-18:13:40 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-5 in the header slot.
-18:13:40 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
-18:13:40 - INFO - main_window.py - User Gameplay: Header slot is filled.
-18:13:40 - INFO - main_window.py - User Gameplay:  User's Header Slot Button Colors: ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:40 - INFO - main_window.py - User Gameplay: Enabled the 'ENCRYPT CODE' button for user's header slot.
-18:13:40 - INFO - main_window.py - User Gameplay: Encrypting the User's code...
-18:13:40 - INFO - main_window.py - User Gameplay: Enabled 'VIEW CODE' button to view User's Code.
-18:13:40 - INFO - main_window.py - User Gameplay: Completed encrypting the User's code.
-18:13:40 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 1
-18:13:40 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 1...
-18:13:40 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
-18:13:41 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:13:41 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
-18:13:41 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 1
-18:13:41 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:41 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:13:41 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF0000', '#0048FF', '#FFFFFF', '#F6FF00', '#FF6F00'].
-18:13:41 - INFO - main_window.py - System Gameplay: Generated system's first guess: ['#FF0000', '#0048FF', '#FFFFFF', '#F6FF00', '#FF6F00']
-18:13:41 - INFO - main_window.py - System Gameplay: Current Turn: 1| System's Guess: ['#FF0000', '#0048FF', '#FFFFFF', '#F6FF00', '#FF6F00']
-18:13:41 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:13:41 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:13:42 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:13:42 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:13:42 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:13:42 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:13:42 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ❌❌❌❌✅
-18:13:42 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:42 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 1
+Feedback to your guess: ❌❌❌❌❌
+11:52:11 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:11 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 2
+11:52:11 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 2...
+11:52:11 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
+11:52:11 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
+11:52:11 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
+11:52:11 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 2
+11:52:11 - INFO - main_window.py - User Gameplay: Code set by system: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:52:11 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
+11:52:11 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 2
+11:52:12 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
+11:52:14 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-1 in the current slot.
+11:52:14 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:14 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:15 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
+11:52:16 - INFO - main_window.py - User Gameplay: User has set BROWN colour in Peg-2 in the current slot.
+11:52:16 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:16 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:16 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:52:18 - INFO - main_window.py - User Gameplay: User has set BLACK colour in Peg-3 in the current slot.
+11:52:18 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:18 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:18 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:52:20 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-4 in the current slot.
+11:52:20 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:20 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:20 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
+11:52:21 - INFO - main_window.py - User Gameplay: User has set GREY colour in Peg-5 in the current slot.
+11:52:21 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:21 - INFO - main_window.py - User Gameplay: Current slot is filled.
+11:52:21 - INFO - main_window.py - User Gameplay: Current Turn: 2 | Slot Button Colors filled by user: ['#9900FF', '#6B1700', '#000000', '#FFFFFF', '#C0C0C0']
+11:52:21 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
+11:52:22 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
+11:52:22 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
+11:52:22 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:52:22 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:52:22 - INFO - main_window.py - Validation Handler: Turn: 2 | Feedback: ✅❌❌❌❌
+11:52:22 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:22 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 2
 
-Feedback to your guess: ❌❌❌❌✅
-18:13:42 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:42 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌❌✅ to NNNNY
-18:13:42 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 2
-18:13:42 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 2...
-18:13:42 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
-18:13:42 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:13:42 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
-18:13:42 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 2
-18:13:42 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:42 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:13:42 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#9900FF', '#6B1700', '#000000', '#04FF00', '#FF6F00'].
-18:13:42 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#9900FF', '#6B1700', '#000000', '#04FF00', '#FF6F00']
-18:13:42 - INFO - main_window.py - System Gameplay: Current Turn: 2| System's Guess: ['#9900FF', '#6B1700', '#000000', '#04FF00', '#FF6F00']
-18:13:42 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:13:42 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:13:43 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:13:43 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:13:43 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:13:43 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:13:43 - INFO - main_window.py - Validation Handler: Turn: 2 | Feedback: ❌❌❌❌✅
-18:13:43 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:43 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 2
+Feedback to your guess: ✅❌❌❌❌
+11:52:22 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:22 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 3
+11:52:22 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 3...
+11:52:23 - INFO - main_window.py - UI Display: Created turn-label for turn number: 3
+11:52:23 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
+11:52:23 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 3
+11:52:23 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 3
+11:52:23 - INFO - main_window.py - User Gameplay: Code set by system: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:52:23 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
+11:52:23 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 3
+11:52:24 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
+11:52:26 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-1 in the current slot.
+11:52:26 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:26 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:26 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
+11:52:28 - INFO - main_window.py - User Gameplay: User has set PINK colour in Peg-2 in the current slot.
+11:52:28 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:28 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:29 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:52:29 - INFO - main_window.py - User Gameplay: User has set KHAKI colour in Peg-3 in the current slot.
+11:52:29 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:29 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:30 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:52:32 - INFO - main_window.py - User Gameplay: User has set CYAN colour in Peg-3 in the current slot.
+11:52:32 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:32 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:32 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:52:33 - INFO - main_window.py - User Gameplay: User has set KHAKI colour in Peg-4 in the current slot.
+11:52:33 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:33 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:34 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:52:35 - INFO - main_window.py - User Gameplay: User has set TEAL colour in Peg-4 in the current slot.
+11:52:35 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:35 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:35 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
+11:52:37 - INFO - main_window.py - User Gameplay: User has set INDIGO colour in Peg-5 in the current slot.
+11:52:37 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:37 - INFO - main_window.py - User Gameplay: Current slot is filled.
+11:52:37 - INFO - main_window.py - User Gameplay: Current Turn: 3 | Slot Button Colors filled by user: ['#9900FF', '#FF00FF', '#00FFFF', '#008080', '#480082']
+11:52:37 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
+11:52:37 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
+11:52:37 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
+11:52:37 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:52:37 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:52:37 - INFO - main_window.py - Validation Handler: Turn: 3 | Feedback: ✅⚠️❌❌❌
+11:52:37 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:37 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 3
 
-Feedback to your guess: ❌❌❌❌✅
-18:13:43 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:43 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌❌✅ to NNNNY
-18:13:43 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 3
-18:13:43 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 3...
-18:13:43 - INFO - main_window.py - UI Display: Created turn-label for turn number: 3
-18:13:43 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
-18:13:43 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 3
-18:13:43 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 3
-18:13:43 - INFO - main_window.py - System Gameplay: Code set by user is ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:43 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
-18:13:43 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00'].
-18:13:43 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:43 - INFO - main_window.py - System Gameplay: Current Turn: 3| System's Guess: ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:43 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
-18:13:43 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
-18:13:44 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
-18:13:44 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
-18:13:44 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:13:44 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:13:44 - INFO - main_window.py - Validation Handler: Turn: 3 | Feedback: ✅✅✅✅✅
-18:13:44 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:44 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 3
+Feedback to your guess: ✅⚠️❌❌❌
+11:52:37 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:37 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 4
+11:52:37 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 4...
+11:52:37 - INFO - main_window.py - UI Display: Created turn-label for turn number: 4
+11:52:37 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
+11:52:37 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 4
+11:52:37 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 4
+11:52:37 - INFO - main_window.py - User Gameplay: Code set by system: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:52:37 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
+11:52:37 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 4
+11:52:40 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
+11:52:42 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-1 in the current slot.
+11:52:42 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:42 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:43 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:52:45 - INFO - main_window.py - User Gameplay: User has set PINK colour in Peg-3 in the current slot.
+11:52:45 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:45 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:46 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:52:48 - INFO - main_window.py - User Gameplay: User has set KHAKI colour in Peg-4 in the current slot.
+11:52:48 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:48 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:48 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
+11:52:51 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-2 in the current slot.
+11:52:51 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:51 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:51 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
+11:52:53 - INFO - main_window.py - User Gameplay: User has set PINK colour in Peg-5 in the current slot.
+11:52:53 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:53 - INFO - main_window.py - User Gameplay: Current slot is filled.
+11:52:53 - INFO - main_window.py - User Gameplay: Current Turn: 4 | Slot Button Colors filled by user: ['#9900FF', '#9900FF', '#FF00FF', '#808000', '#FF00FF']
+11:52:53 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
+11:52:54 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
+11:52:54 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
+11:52:54 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:52:54 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:52:54 - INFO - main_window.py - Validation Handler: Turn: 4 | Feedback: ✅✅❌❌✅
+11:52:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:52:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 4
+
+Feedback to your guess: ✅✅❌❌✅
+11:52:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:52:54 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 5
+11:52:54 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 5...
+11:52:54 - INFO - main_window.py - UI Display: Created turn-label for turn number: 5
+11:52:54 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
+11:52:54 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 5
+11:52:54 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 5
+11:52:54 - INFO - main_window.py - User Gameplay: Code set by system: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:52:54 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
+11:52:54 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 5
+11:52:56 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
+11:52:58 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-1 in the current slot.
+11:52:58 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:52:58 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:52:58 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
+11:53:00 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-2 in the current slot.
+11:53:00 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:53:00 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:53:01 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
+11:53:03 - INFO - main_window.py - User Gameplay: User has set PINK colour in Peg-5 in the current slot.
+11:53:03 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:53:03 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:53:05 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
+11:53:09 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-3 in the current slot.
+11:53:09 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:53:09 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
+11:53:09 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
+11:53:11 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-4 in the current slot.
+11:53:11 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
+11:53:11 - INFO - main_window.py - User Gameplay: Current slot is filled.
+11:53:11 - INFO - main_window.py - User Gameplay: Current Turn: 5 | Slot Button Colors filled by user: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:53:11 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
+11:53:11 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
+11:53:11 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
+11:53:11 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:11 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:11 - INFO - main_window.py - Validation Handler: Turn: 5 | Feedback: ✅✅✅✅✅
+11:53:11 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:11 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 5
 
 Feedback to your guess: ✅✅✅✅✅
-18:13:44 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:44 - INFO - main_window.py - User Gameplay: System has cracked the user's code.
-18:13:44 - INFO - main_window.py - User Gameplay: Displayed the User's Code: ['#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00', '#FF6F00']
-18:13:44 - INFO - main_window.py - User Gameplay: Disabled the additional button in the User's Header slot.
-18:13:44 - INFO - main_window.py - User Gameplay: Completed handling user code after system decode.
-18:13:44 - INFO - main_window.py - Validation Handler: Number of turns taken by system to crack the code: 3
-18:13:44 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:44 - INFO - main_window.py - UI Display: Sender: YOU | Message: Well Noobie! Good for you.
-You finally were able to crack it. Not bad, huh!
-18:13:44 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:13:44 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:13:44 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Time to move on to next step.
-We swap our turns now. Click on the 'NEXT' button to begin.
-Then, click on SET/START as you see fit.
-18:13:44 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:00 - INFO - main_window.py - ---
-18:14:00 - INFO - main_window.py - Gameflow Handler: Handling gameplay transition...
-18:14:00 - INFO - system_decoder.py - Util: SystemDecoder initialized.
-18:14:00 - INFO - main_window.py - Gameflow Handler: Completed refreshing gameplay variables.
-18:14:00 - INFO - main_window.py - Gameflow Handler: User's SET-CODE role complete.
-18:14:00 - INFO - main_window.py - Gameflow Handler: Turns taken by System to crack User's Code: 3
-18:14:00 - INFO - main_window.py - UI Handler: Clearing all widgets in Screen-B Board...
-18:14:00 - INFO - main_window.py - UI Handler: Completed clearing Screen-B Board.
-18:14:00 - INFO - main_window.py - UI Handler: Swapping 'USER' and 'SYSTEM' labels on Screen-A...
-18:14:00 - INFO - main_window.py - UI Handler: Completed swapping 'USER' and 'SYSTEM' labels on Screen-A.
-18:14:00 - INFO - main_window.py - Gameflow Handler: User's next role: DE-CODE.
-18:14:00 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: YOU...
-18:14:00 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
-18:14:00 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:14:00 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for system.
-18:14:00 - INFO - main_window.py - UI Display: Created turn-label for Header.
-18:14:00 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
-18:14:00 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
-18:14:00 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay transition.
-18:14:00 - INFO - main_window.py - ---
-18:14:02 - INFO - main_window.py - ---
-18:14:02 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
-18:14:02 - INFO - main_window.py - Gameflow Handler: Current User Role: DE-CODE
-18:14:02 - INFO - main_window.py - Gameflow Handler: Current System Role: SET-CODE
-18:14:02 - INFO - main_window.py - Gameflow Handler: Starting user decode game.
-18:14:02 - INFO - main_window.py - Gameflow Handler: Handling User's start decode | System's start set-code game...
-18:14:02 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
-18:14:02 - INFO - logics.py - Util: Creating the colour code...
-18:14:02 - INFO - logics.py - Util: Attempt 1: Generated code ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00'] with entropy 1.3709505944546687
-18:14:02 - INFO - logics.py - Util: Created the colour code: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00'] at attempt 1.
-18:14:02 - INFO - main_window.py - System Gameplay: System has set ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00'] as the code for user to crack.
-18:14:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:02 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: I have set the secret code. Do you have what it takes to crack it?
-Then go ahead and show me what SuperMastermind you are! Noob ;)
-18:14:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:02 - INFO - main_window.py - UI Handler: Enabling System-Header 'REVEAL CODE' button. 
-18:14:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:02 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Oh by the way, if you click
-on the 'REVEAL CODE ▶' button at any point of time in the game before you crack my code, you LOSE.
-Want to be a Noob? Go ahead and click on 'REVEAL CODE ▶' ;)
-18:14:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:02 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:02 - INFO - main_window.py - UI Display: Sender: YOU | Message: Who you calling a Noob, you Noobie?
-I thought I already told I ain't quitting without winning. Don't whine from now itself. Lol.
-18:14:02 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:02 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 1
-18:14:02 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 1...
-18:14:02 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
-18:14:02 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:14:02 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
-18:14:02 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 1
-18:14:02 - INFO - main_window.py - User Gameplay: Code set by system: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:02 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:14:02 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 1
-18:14:02 - INFO - main_window.py - Gameflow Handler: Completed handling User's start decode | System's start set-code game.
-18:14:02 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
-18:14:02 - INFO - main_window.py - ---
-18:14:03 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
-18:14:04 - INFO - main_window.py - User Gameplay: User has set RED colour in Peg-1 in the current slot.
-18:14:04 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:04 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:04 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
-18:14:05 - INFO - main_window.py - User Gameplay: User has set ORANGE colour in Peg-2 in the current slot.
-18:14:05 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:05 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:06 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
-18:14:07 - INFO - main_window.py - User Gameplay: User has set YELLOW colour in Peg-3 in the current slot.
-18:14:07 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:07 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:07 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
-18:14:09 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-4 in the current slot.
-18:14:09 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:09 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:09 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
-18:14:11 - INFO - main_window.py - User Gameplay: User has set BLUE colour in Peg-5 in the current slot.
-18:14:11 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:11 - INFO - main_window.py - User Gameplay: Current slot is filled.
-18:14:11 - INFO - main_window.py - User Gameplay: Current Turn: 1 | Slot Button Colors filled by user: ['#FF0000', '#FF6F00', '#F6FF00', '#04FF00', '#0048FF']
-18:14:11 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
-18:14:11 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:14:11 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:14:11 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:14:11 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:14:11 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ❌❌❌⚠️❌
-18:14:11 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:11 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 1
-
-Feedback to your guess: ❌❌❌⚠️❌
-18:14:11 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:11 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 2
-18:14:11 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 2...
-18:14:11 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
-18:14:11 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:14:11 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
-18:14:11 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 2
-18:14:11 - INFO - main_window.py - User Gameplay: Code set by system: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:11 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:14:11 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 2
-18:14:12 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
-18:14:14 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-1 in the current slot.
-18:14:14 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:14 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:15 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
-18:14:16 - INFO - main_window.py - User Gameplay: User has set BROWN colour in Peg-2 in the current slot.
-18:14:16 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:16 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:17 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
-18:14:18 - INFO - main_window.py - User Gameplay: User has set BLACK colour in Peg-3 in the current slot.
-18:14:18 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:18 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:19 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
-18:14:20 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-4 in the current slot.
-18:14:20 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:20 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:21 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
-18:14:22 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-5 in the current slot.
-18:14:22 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:22 - INFO - main_window.py - User Gameplay: Current slot is filled.
-18:14:22 - INFO - main_window.py - User Gameplay: Current Turn: 2 | Slot Button Colors filled by user: ['#9900FF', '#6B1700', '#000000', '#FFFFFF', '#04FF00']
-18:14:22 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
-18:14:23 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:14:23 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:14:23 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:14:23 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:14:23 - INFO - main_window.py - Validation Handler: Turn: 2 | Feedback: ⚠️❌❌⚠️✅
-18:14:23 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:23 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 2
-
-Feedback to your guess: ⚠️❌❌⚠️✅
-18:14:23 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:23 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 3
-18:14:23 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 3...
-18:14:23 - INFO - main_window.py - UI Display: Created turn-label for turn number: 3
-18:14:23 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:14:23 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 3
-18:14:23 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 3
-18:14:23 - INFO - main_window.py - User Gameplay: Code set by system: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:23 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:14:23 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 3
-18:14:25 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
-18:14:27 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-5 in the current slot.
-18:14:27 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:27 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:29 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
-18:14:31 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-1 in the current slot.
-18:14:31 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:31 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:32 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
-18:14:34 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-4 in the current slot.
-18:14:34 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:34 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:34 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
-18:14:36 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-2 in the current slot.
-18:14:36 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:36 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:36 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
-18:14:38 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-3 in the current slot.
-18:14:38 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:38 - INFO - main_window.py - User Gameplay: Current slot is filled.
-18:14:38 - INFO - main_window.py - User Gameplay: Current Turn: 3 | Slot Button Colors filled by user: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#9900FF', '#04FF00']
-18:14:38 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
-18:14:38 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:14:38 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:14:38 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:14:38 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:14:38 - INFO - main_window.py - Validation Handler: Turn: 3 | Feedback: ✅❌❌✅✅
-18:14:38 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:38 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 3
-
-Feedback to your guess: ✅❌❌✅✅
-18:14:38 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:38 - INFO - main_window.py - User Gameplay: Activating User's turn. Turn Number: 4
-18:14:38 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: YOU for current turn: 4...
-18:14:38 - INFO - main_window.py - UI Display: Created turn-label for turn number: 4
-18:14:38 - INFO - main_window.py - UI Display: Created normal peg slot row for user's decoding turn.
-18:14:38 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 4
-18:14:38 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: YOU for current turn: 4
-18:14:38 - INFO - main_window.py - User Gameplay: Code set by system: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:38 - INFO - main_window.py - User Gameplay: Enabling User's peg slot buttons...
-18:14:38 - INFO - main_window.py - User Gameplay: Enabled User's peg slot buttons for turn: 4
-18:14:40 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the current slot.
-18:14:42 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-5 in the current slot.
-18:14:42 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:42 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:43 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the current slot.
-18:14:45 - INFO - main_window.py - User Gameplay: User has set WHITE colour in Peg-1 in the current slot.
-18:14:45 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:45 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:46 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the current slot.
-18:14:48 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-4 in the current slot.
-18:14:48 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:48 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:48 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the current slot.
-18:14:51 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-3 in the current slot.
-18:14:51 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:51 - INFO - main_window.py - User Gameplay: Current slot not yet filled fully.
-18:14:51 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the current slot.
-18:14:53 - INFO - main_window.py - User Gameplay: User has set GREEN colour in Peg-2 in the current slot.
-18:14:53 - INFO - main_window.py - User Gameplay: Checking if current slot is filled...
-18:14:53 - INFO - main_window.py - User Gameplay: Current slot is filled.
-18:14:53 - INFO - main_window.py - User Gameplay: Current Turn: 4 | Slot Button Colors filled by user: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:53 - INFO - main_window.py - User Gameplay: Enabled the 'VALIDATE CODE' button for current slot.
-18:14:54 - INFO - main_window.py - User Gameplay: Disabling User's peg slot buttons...
-18:14:54 - INFO - main_window.py - User Gameplay: Completed disabling User's peg slot buttons.
-18:14:54 - INFO - logics.py - Util: Evaluating the guess against the secret code...
-18:14:54 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
-18:14:54 - INFO - main_window.py - Validation Handler: Turn: 4 | Feedback: ✅✅✅✅✅
-18:14:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turn Number: 4
-
-Feedback to your guess: ✅✅✅✅✅
-18:14:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:54 - INFO - main_window.py - System Gameplay: User has cracked the system's code.
-18:14:54 - INFO - main_window.py - System Gameplay: Displayed the System's Code: ['#FFFFFF', '#04FF00', '#04FF00', '#9900FF', '#04FF00']
-18:14:54 - INFO - main_window.py - System Gameplay: Disabled the additional button in the System's Header slot.
-18:14:54 - INFO - main_window.py - System Gameplay: Completed handling system code after user decode.
-18:14:54 - INFO - main_window.py - Validation Handler: Number of turns taken by user to crack the code: 4
-18:14:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Well, well noob. You did it.
+11:53:11 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:11 - INFO - main_window.py - System Gameplay: User has cracked the system's code.
+11:53:11 - INFO - main_window.py - System Gameplay: Displayed the System's Code: ['#9900FF', '#9900FF', '#9900FF', '#9900FF', '#FF00FF']
+11:53:11 - INFO - main_window.py - System Gameplay: Disabled the additional button in the System's Header slot.
+11:53:11 - INFO - main_window.py - System Gameplay: Completed handling system code after user decode.
+11:53:11 - INFO - main_window.py - Validation Handler: Number of turns taken by user to crack the code: 5
+11:53:11 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:11 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Well, well noob. You did it.
 Who knew you would be able to crack my code!
-18:14:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:54 - INFO - main_window.py - ---
-18:14:54 - INFO - main_window.py - Gameflow Handler: Handling gameplay ending...
-18:14:54 - INFO - main_window.py - Gameplay Handler: Turns taken by User to crack System's Code: 4
-18:14:54 - INFO - main_window.py - Gameplay Handler: Turns taken by System to crack User's Code: 3
-18:14:54 - INFO - main_window.py - Gameplay Handler: System won the game!
-18:14:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Turns taken by you to crack my code: 4
+11:53:11 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:11 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:11 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Time to move on to next step.
+We swap our turns now. Click on the 'NEXT' button to begin.
+Then, click on SET/START as you see fit.
+11:53:11 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:14 - INFO - main_window.py - ---
+11:53:14 - INFO - main_window.py - Gameflow Handler: Handling gameplay transition...
+11:53:14 - INFO - system_decoder.py - Util: SystemDecoder initialized.
+11:53:14 - INFO - main_window.py - Gameflow Handler: Completed refreshing gameplay variables.
+11:53:14 - INFO - main_window.py - Gameflow Handler: User's DE-CODE role complete.
+11:53:14 - INFO - main_window.py - Gameflow Handler: Turns taken by User to crack System's Code: 5
+11:53:14 - INFO - main_window.py - UI Handler: Clearing all widgets in Screen-B Board...
+11:53:14 - INFO - main_window.py - UI Handler: Completed clearing Screen-B Board.
+11:53:14 - INFO - main_window.py - UI Handler: Swapping 'USER' and 'SYSTEM' labels on Screen-A...
+11:53:14 - INFO - main_window.py - UI Handler: Completed swapping 'USER' and 'SYSTEM' labels on Screen-A.
+11:53:14 - INFO - main_window.py - Gameflow Handler: User's next role: SET-CODE.
+11:53:14 - INFO - main_window.py - UI Display: Rendering the Screen-B Board for current decoder: SYSTEM...
+11:53:14 - INFO - main_window.py - UI Display: Creating the header frame in Screen-B for current code-setter...
+11:53:14 - INFO - main_window.py - UI Display: Created turn-label for Header.
+11:53:14 - INFO - main_window.py - UI Display: Created Header Peg Slot Row for user.
+11:53:14 - INFO - main_window.py - UI Display: Created turn-label for Header.
+11:53:14 - INFO - main_window.py - UI Display: Created the header frame in Screen-B for current code-setter.
+11:53:14 - INFO - main_window.py - UI Display: Completed rendering Screen-B Board for the current decoder.
+11:53:14 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay transition.
+11:53:14 - INFO - main_window.py - ---
+11:53:20 - INFO - main_window.py - ---
+11:53:20 - INFO - main_window.py - Gameflow Handler: Handling gameplay flow...
+11:53:20 - INFO - main_window.py - Gameflow Handler: Current User Role: SET-CODE
+11:53:20 - INFO - main_window.py - Gameflow Handler: Current System Role: DE-CODE
+11:53:20 - INFO - main_window.py - Gameflow Handler: Starting system decode game.
+11:53:20 - INFO - main_window.py - Gameflow Handler: Handling User's start set-code | System's start decode game...
+11:53:20 - INFO - main_window.py - Gameflow Handler: Disabled the 'START' gameplay button on Screen-A.
+11:53:20 - INFO - main_window.py - User Gameplay: Enabling User's Header row peg slot buttons...
+11:53:20 - INFO - main_window.py - User Gameplay: Enabled User's header row peg slot buttons.
+11:53:20 - INFO - main_window.py - User Gameplay: Enabled the header row peg slot buttons for user to fill colours.
+11:53:20 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:20 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Yo Noob! You can SET CODE now.
+Let's see how many turns I take to crack it.
+11:53:20 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:20 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:20 - INFO - main_window.py - UI Display: Sender: YOU | Message: You ain't cracking my code, Noobie.
+Not now. Now in an eternity! Keep whining.
+11:53:20 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:20 - INFO - main_window.py - Gameflow Handler: Completed handling User's start set-code | System's start decode game.
+11:53:20 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay flow.
+11:53:20 - INFO - main_window.py - ---
+11:53:21 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-1 in the header slot.
+11:53:32 - INFO - main_window.py - User Gameplay: User has set INDIGO colour in Peg-1 in the header slot.
+11:53:32 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
+11:53:32 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
+11:53:33 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-2 in the header slot.
+11:53:34 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-2 in the header slot.
+11:53:34 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
+11:53:34 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
+11:53:35 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-3 in the header slot.
+11:53:36 - INFO - main_window.py - User Gameplay: User has set INDIGO colour in Peg-3 in the header slot.
+11:53:36 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
+11:53:36 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
+11:53:37 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-4 in the header slot.
+11:53:38 - INFO - main_window.py - User Gameplay: User has set PURPLE colour in Peg-4 in the header slot.
+11:53:38 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
+11:53:38 - INFO - main_window.py - User Gameplay: Header slot not yet filled fully.
+11:53:38 - INFO - main_window.py - User Gameplay: User has opened the colour dropdown on Peg-5 in the header slot.
+11:53:40 - INFO - main_window.py - User Gameplay: User has set INDIGO colour in Peg-5 in the header slot.
+11:53:40 - INFO - main_window.py - User Gameplay: Checking if header slot is filled...
+11:53:40 - INFO - main_window.py - User Gameplay: Header slot is filled.
+11:53:40 - INFO - main_window.py - User Gameplay:  User's Header Slot Button Colors: ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:40 - INFO - main_window.py - User Gameplay: Enabled the 'ENCRYPT CODE' button for user's header slot.
+11:53:42 - INFO - main_window.py - User Gameplay: Encrypting the User's code...
+11:53:42 - INFO - main_window.py - User Gameplay: Enabled 'VIEW CODE' button to view User's Code.
+11:53:42 - INFO - main_window.py - User Gameplay: Completed encrypting the User's code.
+11:53:42 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 1
+11:53:42 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 1...
+11:53:42 - INFO - main_window.py - UI Display: Created turn-label for turn number: 1
+11:53:42 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:42 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 1
+11:53:42 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 1
+11:53:42 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:42 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:42 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FFFFFF', '#04FF00', '#00FFFF', '#9900FF', '#000000'].
+11:53:42 - INFO - main_window.py - System Gameplay: Generated system's first guess: ['#FFFFFF', '#04FF00', '#00FFFF', '#9900FF', '#000000']
+11:53:42 - INFO - main_window.py - System Gameplay: Current Turn: 1| System's Guess: ['#FFFFFF', '#04FF00', '#00FFFF', '#9900FF', '#000000']
+11:53:42 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:42 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:43 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:43 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:43 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:43 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:43 - INFO - main_window.py - Validation Handler: Turn: 1 | Feedback: ❌❌❌✅❌
+11:53:43 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:43 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 1
 
-Turns taken by me to crack your code: 3
-18:14:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: Yo Noob! Told you, you had no chance against me.
-I win. I GODDAMN win. Now go home and come back when you are ready!
-18:14:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
-18:14:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: In any case, it's GAME OVER.
+Feedback to your guess: ❌❌❌✅❌
+11:53:43 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:43 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌✅❌ to NNNYN
+11:53:43 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 2
+11:53:43 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 2...
+11:53:43 - INFO - main_window.py - UI Display: Created turn-label for turn number: 2
+11:53:43 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:44 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 2
+11:53:44 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 2
+11:53:44 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:44 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:44 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF00FF', '#F6FF00', '#008080', '#9900FF', '#480082'].
+11:53:44 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#FF00FF', '#F6FF00', '#008080', '#9900FF', '#480082']
+11:53:44 - INFO - main_window.py - System Gameplay: Current Turn: 2| System's Guess: ['#FF00FF', '#F6FF00', '#008080', '#9900FF', '#480082']
+11:53:44 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:44 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:47 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:47 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:47 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:47 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:47 - INFO - main_window.py - Validation Handler: Turn: 2 | Feedback: ❌❌❌✅✅
+11:53:47 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:47 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 2
+
+Feedback to your guess: ❌❌❌✅✅
+11:53:47 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:47 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌✅✅ to NNNYY
+11:53:47 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 3
+11:53:47 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 3...
+11:53:47 - INFO - main_window.py - UI Display: Created turn-label for turn number: 3
+11:53:47 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:47 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 3
+11:53:47 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 3
+11:53:47 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:47 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:47 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#C0C0C0', '#6B1700', '#0048FF', '#9900FF', '#480082'].
+11:53:47 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#C0C0C0', '#6B1700', '#0048FF', '#9900FF', '#480082']
+11:53:47 - INFO - main_window.py - System Gameplay: Current Turn: 3| System's Guess: ['#C0C0C0', '#6B1700', '#0048FF', '#9900FF', '#480082']
+11:53:47 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:47 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:49 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:49 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:49 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:49 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:49 - INFO - main_window.py - Validation Handler: Turn: 3 | Feedback: ❌❌❌✅✅
+11:53:49 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:49 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 3
+
+Feedback to your guess: ❌❌❌✅✅
+11:53:49 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:49 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌✅✅ to NNNYY
+11:53:49 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 4
+11:53:49 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 4...
+11:53:49 - INFO - main_window.py - UI Display: Created turn-label for turn number: 4
+11:53:49 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:49 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 4
+11:53:49 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 4
+11:53:49 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:49 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:49 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#FF0000', '#FF6F00', '#808000', '#9900FF', '#480082'].
+11:53:49 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#FF0000', '#FF6F00', '#808000', '#9900FF', '#480082']
+11:53:49 - INFO - main_window.py - System Gameplay: Current Turn: 4| System's Guess: ['#FF0000', '#FF6F00', '#808000', '#9900FF', '#480082']
+11:53:49 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:49 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:50 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:50 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:50 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:50 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:50 - INFO - main_window.py - Validation Handler: Turn: 4 | Feedback: ❌❌❌✅✅
+11:53:50 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:50 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 4
+
+Feedback to your guess: ❌❌❌✅✅
+11:53:50 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:50 - INFO - logics.py - Util: Converted feedback emojis to string format: ❌❌❌✅✅ to NNNYY
+11:53:50 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 5
+11:53:50 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 5...
+11:53:50 - INFO - main_window.py - UI Display: Created turn-label for turn number: 5
+11:53:50 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:50 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 5
+11:53:50 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 5
+11:53:50 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:50 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:50 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#480082', '#480082', '#480082', '#9900FF', '#480082'].
+11:53:50 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#480082', '#480082', '#480082', '#9900FF', '#480082']
+11:53:50 - INFO - main_window.py - System Gameplay: Current Turn: 5| System's Guess: ['#480082', '#480082', '#480082', '#9900FF', '#480082']
+11:53:50 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:50 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:52 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:52 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:52 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:52 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:52 - INFO - main_window.py - Validation Handler: Turn: 5 | Feedback: ✅❌✅✅✅
+11:53:52 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:52 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 5
+
+Feedback to your guess: ✅❌✅✅✅
+11:53:52 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:52 - INFO - logics.py - Util: Converted feedback emojis to string format: ✅❌✅✅✅ to YNYYY
+11:53:52 - INFO - main_window.py - System Gameplay: Activating System's turn. Turn Number: 6
+11:53:52 - INFO - main_window.py - UI Display: Creating TLPSF Row for current decoder: SYSTEM for current turn: 6...
+11:53:52 - INFO - main_window.py - UI Display: Created turn-label for turn number: 6
+11:53:52 - INFO - main_window.py - UI Display: Created normal peg slot row for system's decoding turn.
+11:53:52 - INFO - main_window.py - UI Display: Created feedback-label for turn number: 6
+11:53:52 - INFO - main_window.py - UI Display: Created TLPSF Row for current decoder: SYSTEM for current turn: 6
+11:53:52 - INFO - main_window.py - System Gameplay: Code set by user is ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:52 - INFO - main_window.py - System Gameplay: Filling the current row with system's guess...
+11:53:52 - INFO - system_decoder.py - Util: SystemDecoder guess: ['#480082', '#9900FF', '#480082', '#9900FF', '#480082'].
+11:53:52 - INFO - main_window.py - System Gameplay: Generated system's next guess: ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:52 - INFO - main_window.py - System Gameplay: Current Turn: 6| System's Guess: ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:52 - INFO - main_window.py - System Gameplay: Enabled the 'VALIDATE CODE' button for colour validation.
+11:53:52 - INFO - main_window.py - System Gameplay: Completed filling the current row with system's guess.
+11:53:54 - INFO - main_window.py - System Gameplay: Disabling System's peg slot buttons...
+11:53:54 - INFO - main_window.py - System Gameplay: Completed disabling System's peg slot buttons.
+11:53:54 - INFO - logics.py - Util: Evaluating the guess against the secret code...
+11:53:54 - INFO - logics.py - Util: Evaluted the guess and generated the feedback.
+11:53:54 - INFO - main_window.py - Validation Handler: Turn: 6 | Feedback: ✅✅✅✅✅
+11:53:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:54 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turn Number: 6
+
+Feedback to your guess: ✅✅✅✅✅
+11:53:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:54 - INFO - main_window.py - User Gameplay: System has cracked the user's code.
+11:53:54 - INFO - main_window.py - User Gameplay: Displayed the User's Code: ['#480082', '#9900FF', '#480082', '#9900FF', '#480082']
+11:53:54 - INFO - main_window.py - User Gameplay: Disabled the additional button in the User's Header slot.
+11:53:54 - INFO - main_window.py - User Gameplay: Completed handling user code after system decode.
+11:53:54 - INFO - main_window.py - Validation Handler: Number of turns taken by system to crack the code: 6
+11:53:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:54 - INFO - main_window.py - UI Display: Sender: YOU | Message: Well Noobie! Good for you.
+You finally were able to crack it. Not bad, huh!
+11:53:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:54 - INFO - main_window.py - ---
+11:53:54 - INFO - main_window.py - Gameflow Handler: Handling gameplay ending...
+11:53:54 - INFO - main_window.py - Gameplay Handler: Turns taken by User to crack System's Code: 5
+11:53:54 - INFO - main_window.py - Gameplay Handler: Turns taken by System to crack User's Code: 6
+11:53:54 - INFO - main_window.py - Gameplay Handler: User won the game!
+11:53:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:54 - INFO - main_window.py - UI Display: Sender: YOU | Message: Turns taken by you to crack my code: 6
+
+Turns taken by me to crack your code: 5
+11:53:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:54 - INFO - main_window.py - UI Display: Sender: YOU | Message: Who's the noob now, Noobie!?
+Told you I'd win. Now keep whining.
+I WIN. I GODDAMN WIN!
+11:53:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:54 - INFO - main_window.py - UI Display: Creating chat message for Screen-C >>>
+11:53:54 - INFO - main_window.py - UI Display: Sender: SYSTEM | Message: In any case, it's GAME OVER.
 So if you want to go back home, click on the EXIT button below.
 Until next time!
-18:14:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
-18:14:54 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay ending.
-18:14:54 - INFO - main_window.py - ---
-18:21:37 - INFO - background.py - Background: User has closed the application.
-18:21:37 - INFO - background.py - Background: SuperMastermind application has stopped running.
-18:21:37 - INFO - background.py - END
+11:53:54 - INFO - main_window.py - UI Display: Completed creating chat message in Screen-C <<<
+11:53:54 - INFO - main_window.py - Gameflow Handler: Completed handling gameplay ending.
+11:53:54 - INFO - main_window.py - ---
+11:54:11 - INFO - main_window.py - ---
+11:54:11 - INFO - main_window.py - UI Handler: User has clicked the EXIT ▶ button on Gameplay screento navigate to home screen.
+11:54:11 - INFO - main_window.py - UI Handler: Handling home screen display >>>
+11:54:11 - INFO - main_window.py - UI Handler: Cleared the Main Panel area.
+11:54:11 - INFO - system_decoder.py - Util: SystemDecoder initialized.
+11:54:11 - INFO - main_window.py - UI Handler: Completed resetting the App-State Variables.
+11:54:11 - INFO - main_window.py - UI Display: Rendering home screen display...
+11:54:11 - INFO - background.py - UI Background: Loading background image for HOME screen...
+11:54:11 - INFO - background.py - Util: Converting relative path to absolute path...
+11:54:11 - INFO - background.py - Util: Converted relative path to absolute path for the asset.
+11:54:11 - INFO - background.py - UI Background: Loaded background image for HOME screen.
+11:54:11 - INFO - main_window.py - UI Display: Loaded home screen content area.
+11:54:11 - INFO - main_window.py - UI Display: Completed rendering home screen display.
+11:54:11 - INFO - main_window.py - UI Display: Displaying home screen.
+11:54:12 - INFO - main_window.py - UI Handler: Completed handling home screen display <<<
+11:54:12 - INFO - main_window.py - ---
+11:54:13 - INFO - background.py - Background: User has closed the application.
+11:54:13 - INFO - background.py - Background: SuperMastermind application has stopped running.
+11:54:13 - INFO - background.py - END
