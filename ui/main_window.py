@@ -7,6 +7,7 @@ from util.logics import (
     convert_feedback_emojis_to_string,
 )
 from util.system_decoder import SystemDecoder
+from util.audio_manager import AudioManager
 from util.constants import *
 from ui.background import load_bg_image_for_canvas
 
@@ -31,6 +32,7 @@ class MainWindow(ctk.CTkFrame):
         self.system_current_guess = None
         self.is_systems_code_revealed = False
         self.system_decoder = SystemDecoder()
+        self.audio = AudioManager()
 
         self.current_turn = 0
         self.user_total_turns = 0
@@ -111,7 +113,10 @@ class MainWindow(ctk.CTkFrame):
             width=240,
             height=50,
             font=ctk.CTkFont(size=16, weight="bold"),
-            command=self._go_to_choose_task_screen,
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=self._go_to_choose_task_screen,
+            ),
         ).pack(pady=20)
 
         ctk.CTkButton(
@@ -120,7 +125,10 @@ class MainWindow(ctk.CTkFrame):
             width=240,
             height=50,
             font=ctk.CTkFont(size=16, weight="bold"),
-            command=self._go_to_instructions_screen,
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=self._go_to_instructions_screen,
+            ),
         ).pack(pady=10)
         logger.info("UI Display: Loaded home screen content area.")
 
@@ -176,8 +184,11 @@ class MainWindow(ctk.CTkFrame):
             width=150,
             bg_color=BLACK,
             fg_color=BLACK,
-            command=lambda: self._go_to_home_screen(
-                event="BACK", screen="Instructions"
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=lambda: self._go_to_home_screen(
+                    event="BACK", screen="Instructions"
+                ),
             ),
         ).pack(pady=20)
         logger.info("UI Display: Loaded instructions screen content area.")
@@ -226,7 +237,10 @@ class MainWindow(ctk.CTkFrame):
             text=SET_CODE,
             width=140,
             fg_color=BLUE,
-            command=lambda: self._handle_user_taskscreen_choice(SET_CODE),
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=lambda: self._handle_user_taskscreen_choice(SET_CODE),
+            ),
         ).pack(side="left", padx=20)
 
         ctk.CTkButton(
@@ -235,8 +249,26 @@ class MainWindow(ctk.CTkFrame):
             width=140,
             fg_color=RED,
             hover_color="#D60000",
-            command=lambda: self._handle_user_taskscreen_choice(DE_CODE),
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=lambda: self._handle_user_taskscreen_choice(DE_CODE),
+            ),
         ).pack(side="left", padx=20)
+
+        ctk.CTkButton(
+            self.bg_canvas,
+            text="BACK",
+            width=150,
+            bg_color=BLACK,
+            fg_color=BLACK,
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=lambda: self._go_to_home_screen(
+                    event="BACK", screen="Choose Task"
+                ),
+            ),
+        ).place(relx=0.5, rely=0.7, anchor="n")
+
         logger.info("UI Display: Loaded choose task screen content area.")
 
         logger.info("UI Display: Completed rendering choose task screen display.")
@@ -265,7 +297,7 @@ class MainWindow(ctk.CTkFrame):
         logger.info("UI Display: Completed rendering gameplay load screen display.")
         logger.info("UI Display: Displaying gameplay load screen.")
 
-        self.after(5000, self._go_to_gameplay_screen)
+        self.after(4000, self._go_to_gameplay_screen)
 
     # <<<
 
@@ -305,7 +337,10 @@ class MainWindow(ctk.CTkFrame):
             fg_color=BLACK,
             font=("Times New Roman", 30, "bold"),
             text_color=WHITE,
-            command=self._handle_gameplay_flow,
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=self._handle_gameplay_flow,
+            ),
         )
         self.start_gameplay_btn.pack(pady=210)
 
@@ -385,7 +420,12 @@ class MainWindow(ctk.CTkFrame):
             height=60,
             fg_color=BLACK,
             font=("Times New Roman", 30, "bold"),
-            command=lambda: self._go_to_home_screen(event="EXIT ▶", screen="Gameplay"),
+            command=lambda: self.handle_audio_visual_transition(
+                sound_name=self.audio.play("button_click"),
+                callback=lambda: self._go_to_home_screen(
+                    event="EXIT ▶", screen="Gameplay"
+                ),
+            ),
         ).pack(pady=10)
         logger.info(
             "UI Display: Completed rendering the right panel (screen C) on gameplay screen."
@@ -393,6 +433,7 @@ class MainWindow(ctk.CTkFrame):
 
         self._add_chat_message(sender=SYSTEM, message=SYSTEM_EXIT_WARNING)
         self._add_chat_message(sender=USER, message=USER_START_TEXT)
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
         logger.info("UI Display: Completed rendering gameplay screen display.")
         logger.info("UI Display: Displaying gameplay screen.")
@@ -455,7 +496,7 @@ class MainWindow(ctk.CTkFrame):
 
         self._reset_app_state_variables()
 
-        self.after(1000, self._display_home_screen())
+        self.after(1000, self._display_home_screen)
 
         logger.info("UI Handler: Completed handling home screen display <<<")
         logger.info("---")
@@ -464,6 +505,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _go_to_instructions_screen(self):
+
         logger.info("---")
         logger.info(
             "UI Handler: User has clicked the 'READ INSTRUCTIONS' button on home screen."
@@ -473,7 +515,7 @@ class MainWindow(ctk.CTkFrame):
 
         self._clear_main_panel()
 
-        self.after(2000, self._display_instructions_screen())
+        self.after(1000, self._display_instructions_screen)
 
         logger.info("UI Handler: Completed handling instructions screen display <<<")
         logger.info("---")
@@ -482,6 +524,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _go_to_choose_task_screen(self):
+
         logger.info("---")
         logger.info(
             "UI Handler: User has clicked the 'NEW GAME' button on home screen."
@@ -491,7 +534,7 @@ class MainWindow(ctk.CTkFrame):
 
         self._clear_main_panel()
 
-        self.after(1000, self._display_choose_task_screen())
+        self.after(1000, self._display_choose_task_screen)
 
         logger.info("UI Handler: Completed handling choose task screen display <<<")
         logger.info("---")
@@ -687,7 +730,10 @@ class MainWindow(ctk.CTkFrame):
                 width=30,
                 height=30,
                 state="disabled",
-                command=self._execute_reveal_system_code,
+                command=lambda: self.handle_audio_visual_transition(
+                    sound_name=self.audio.play("game_lose"),
+                    callback=self._execute_reveal_system_code,
+                ),
             )
             additional_btn.pack(side="left", padx=40)
 
@@ -925,6 +971,7 @@ class MainWindow(ctk.CTkFrame):
     # ==================================================
     # >>>
     def _handle_gameplay_flow(self):
+
         logger.info("---")
         logger.info("Gameflow Handler: Handling gameplay flow...")
 
@@ -962,6 +1009,7 @@ class MainWindow(ctk.CTkFrame):
         self._enable_reveal_system_code()
         self._add_chat_message(sender=SYSTEM, message=SYSTEM_REVEAL_CODE_WARNING_TEXT)
         self._add_chat_message(sender=USER, message=USER_SET_CODE_TEXT_REPLY)
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
         self.current_turn = 1
         self._activate_user_turn()
@@ -987,6 +1035,7 @@ class MainWindow(ctk.CTkFrame):
             sender=SYSTEM, message=SYSTEM_PROMPT_USER_TO_SET_CODE_TEXT
         )
         self._add_chat_message(sender=USER, message=USER_PROMPT_SYSTEM_TO_DECODE)
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
         logger.info(
             "Gameflow Handler: Completed handling User's start set-code | System's start decode game."
@@ -1025,7 +1074,13 @@ class MainWindow(ctk.CTkFrame):
             )
             self._build_screen_b_board(parent=self.screen_b, current_decoder=SYSTEM)
             self.start_gameplay_btn.configure(
-                text="SET ▶", state="normal", command=self._handle_gameplay_flow
+                text="SET ▶",
+                state="normal",
+                # command=self._handle_gameplay_flow,
+                command=lambda: self.handle_audio_visual_transition(
+                    sound_name=self.audio.play("button_click"),
+                    callback=self._handle_gameplay_flow,
+                ),
             )
 
         elif self.initial_user_role == SET_CODE:
@@ -1036,7 +1091,12 @@ class MainWindow(ctk.CTkFrame):
             )
             self._build_screen_b_board(parent=self.screen_b, current_decoder=USER)
             self.start_gameplay_btn.configure(
-                text="START ▶", state="normal", command=self._handle_gameplay_flow
+                text="START ▶",
+                state="normal",
+                command=lambda: self.handle_audio_visual_transition(
+                    sound_name=self.audio.play("button_click"),
+                    callback=self._handle_gameplay_flow,
+                ),
             )
 
         logger.info("Gameflow Handler: Completed handling gameplay transition.")
@@ -1089,6 +1149,7 @@ class MainWindow(ctk.CTkFrame):
                 sender=SYSTEM, message=SYSTEM_REPLY_TO_USER_REVEAL_CODE_TEXT
             )
             self._add_chat_message(sender=USER, message=USER_REVEAL_CODE_REPLY)
+            self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
             logger.info("Gameflow Handler: Declared the SYSTEM as WINNER.")
             logger.info("Gameflow Handler: GAME ENDED.")
@@ -1129,6 +1190,8 @@ class MainWindow(ctk.CTkFrame):
             self._add_chat_message(sender=SYSTEM, message=SYSTEM_TIE_TEXT)
 
         self._add_chat_message(sender=SYSTEM, message=SYSTEM_EXIT_TEXT)
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
+
         logger.info("Gameflow Handler: Completed handling gameplay ending.")
         logger.info("---")
 
@@ -1186,6 +1249,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _fill_row_with_system_guess(self):
+        self.audio.play(sound_name="color_select")
 
         logger.info("System Gameplay: Filling the current row with system's guess...")
 
@@ -1300,6 +1364,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _open_colour_dropdown(self, button, peg):
+        self.audio.play(sound_name="peg_click")
 
         logger.info(
             f"User Gameplay: User has opened the colour dropdown on Peg-{peg} in the current slot."
@@ -1324,6 +1389,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _set_peg_color(self, button, peg, color_name):
+        self.audio.play(sound_name="color_select")
 
         button.configure(fg_color=COLOUR_MAP[color_name])
         logger.info(
@@ -1368,7 +1434,8 @@ class MainWindow(ctk.CTkFrame):
             self.user_current_guess = slot_btn_colours
 
             slot_btns[ADD_BTN].configure(
-                state="normal", command=self._execute_validate_code_for_user_decode
+                state="normal",
+                command=self._execute_validate_code_for_user_decode,
             )
             logger.info(
                 "User Gameplay: Enabled the 'VALIDATE CODE' button for current slot."
@@ -1433,6 +1500,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _open_header_pegs_color_dropdown(self, button, peg):
+        self.audio.play("peg_click")
 
         logger.info(
             f"User Gameplay: User has opened the colour dropdown on Peg-{peg} in the header slot."
@@ -1459,6 +1527,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _set_header_peg_color(self, button, peg, color_name):
+        self.audio.play("color_select")
 
         button.configure(fg_color=COLOUR_MAP[color_name])
         logger.info(
@@ -1514,6 +1583,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _encrypt_header_row_peg_slot_buttons(self):
+        self.audio.play(sound_name="button_click")
 
         logger.info("User Gameplay: Encrypting the User's code...")
 
@@ -1533,6 +1603,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _enable_view_user_code(self):
+        self.audio.play(sound_name="button_click")
 
         slot_btns = self.user_slots[HEADER_SLOT]
 
@@ -1548,6 +1619,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _view_header_row_peg_slot_colors(self):
+        self.audio.play(sound_name="button_click")
 
         logger.info(
             "User Gameplay: User has clicked on 'VIEW CODE' in the header slot."
@@ -1573,6 +1645,7 @@ class MainWindow(ctk.CTkFrame):
 
     # >>>
     def _hide_header_row_peg_slot_colors(self):
+        self.audio.play(sound_name="button_click")
 
         logger.info(
             "User Gameplay: User has clicked on 'HIDE CODE' in the header slot."
@@ -1636,8 +1709,10 @@ class MainWindow(ctk.CTkFrame):
             sender=SYSTEM,
             message=f"Turn Number: {self.current_turn}\n\nFeedback to your guess: {feedback}",
         )
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
         if feedback == "✅✅✅✅✅":
+            self.audio.play("solved")
 
             self._handle_system_code_after_user_decode()
 
@@ -1652,19 +1727,27 @@ class MainWindow(ctk.CTkFrame):
 
             if self.current_user_role != self.initial_user_role:
                 self._handle_gameplay_ending()
+                self.after(
+                    50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0)
+                )
                 return
 
             self.start_gameplay_btn.configure(
                 text="NEXT ▶",
                 state="normal",
-                command=self._handle_gameplay_transition,
+                command=lambda: self.handle_audio_visual_transition(
+                    sound_name=self.audio.play("button_click"),
+                    callback=self._handle_gameplay_transition,
+                ),
             )
 
             self._add_chat_message(sender=SYSTEM, message=SYSTEM_NEXT_PART_TEXT)
+            self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
             return
 
         self.current_turn = self.current_turn + 1
         self._activate_user_turn()
+        self.audio.play("unsolved")
 
     # <<<
 
@@ -1685,8 +1768,10 @@ class MainWindow(ctk.CTkFrame):
             sender=USER,
             message=f"Turn Number: {self.current_turn}\n\nFeedback to your guess: {feedback}",
         )
+        self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
 
         if feedback == "✅✅✅✅✅":
+            self.audio.play("solved")
 
             self._handle_user_code_after_system_decode()
 
@@ -1701,15 +1786,22 @@ class MainWindow(ctk.CTkFrame):
 
             if self.current_user_role != self.initial_user_role:
                 self._handle_gameplay_ending()
+                self.after(
+                    50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0)
+                )
                 return
 
             self.start_gameplay_btn.configure(
                 text="NEXT ▶",
                 state="normal",
-                command=self._handle_gameplay_transition,
+                command=lambda: self.handle_audio_visual_transition(
+                    sound_name=self.audio.play("button_click"),
+                    callback=self._handle_gameplay_transition,
+                ),
             )
 
             self._add_chat_message(sender=SYSTEM, message=SYSTEM_NEXT_PART_TEXT)
+            self.after(50, lambda: self.chat_scroll._parent_canvas.yview_moveto(1.0))
             return
 
         feedback_string = convert_feedback_emojis_to_string(feedback)
@@ -1717,5 +1809,17 @@ class MainWindow(ctk.CTkFrame):
 
         self.current_turn = self.current_turn + 1
         self._activate_system_turn()
+        self.audio.play("unsolved")
+
+    # <<<
+
+    # ==================================================
+    # UI - Audio Handler
+    # ==================================================
+    # >>>
+    def handle_audio_visual_transition(self, sound_name, callback, delay=50):
+        self.audio.play(sound_name)
+        logger.info(f"Audio Handler: Sound Name: {sound_name}")
+        self.after(delay, callback)
 
     # <<<
