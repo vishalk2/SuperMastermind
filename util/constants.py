@@ -139,42 +139,42 @@ ADD_BTN = "add_btn"
 ADD_BTN_HEADER_TEXTS = {USER: "REVEAL CODE ▶", SYSTEM: "ENCRYPT CODE ▶"}
 
 # System Chats
-SYSTEM_WELCOME_TEXT = """So Mr. Player, welcome to SuperMastermind.
+SYSTEM_WELCOME_TEXT = """Hey there, welcome to SuperMastermind.
 Since neither of us wants to waste our time, let's get started.
-Click on the 'START' button to start."""
+Click on the 'START' button to get started."""
 
-SYSTEM_START_GAME_TEXT_FOR_USER_DECODE = """Since you have chosen to decode first,
+SYSTEM_START_GAME_TEXT_FOR_USER_DECODE = """Since you have chosen to decode,
 I will set the code first, and you can start decoding once I'm ready."""
 
-SYSTEM_START_GAME_TEXT_FOR_SYSTEM_DECODE = """Since you have chosen to set code first,
+SYSTEM_START_GAME_TEXT_FOR_SYSTEM_DECODE = """Since you have chosen to set code,
 you will set the code first, and I will start decoding once you're ready."""
 
 SYSTEM_EXIT_WARNING = """At any point in time during the game,
-if you want to be a LOSER and want to exit the game, click on the EXIT button below."""
+if you want to be a LOSER and want to exit the game, click on the 'EXIT' button below."""
 
 SYSTEM_SET_CODE_TEXT = """I have set the secret code. Do you have what it takes to crack it?
-Then go ahead and show me what SuperMastermind you are! Noob ;)"""
+Go on and show me what SuperMastermind you are! ;)"""
 
 SYSTEM_REVEAL_CODE_WARNING_TEXT = """Oh by the way, if you click
 on the 'REVEAL CODE ▶' button at any point of time in the game before you crack my code, you LOSE.
-Want to be a Noob? Go ahead and click on 'REVEAL CODE ▶' ;)"""
+Want to be a LOSER? Go ahead and click on 'REVEAL CODE ▶' ;)"""
 
-SYSTEM_REPLY_TO_USER_REVEAL_CODE_TEXT = """So you've done it, heh.
-I knew you were a Noob. Couldn't crack my Code? Accept it or not, I WIN!
-This is GAME OVER! Now click on EXIT & GO HOME Noob.
+SYSTEM_REPLY_TO_USER_REVEAL_CODE_TEXT = """So you've done it.
+I knew you were a LOSER. Couldn't crack my Code? That's that. I WIN!
+GAME OVER! Now click on EXIT & GO HOME LOSER.
 Come back when you are ready! Hehe."""
 
-SYSTEM_PROMPT_USER_TO_SET_CODE_TEXT = """Yo Noob! You can SET CODE now.
+SYSTEM_PROMPT_USER_TO_SET_CODE_TEXT = """Yo! You can SET CODE now.
 Let's see how many turns I take to crack it."""
 
-SYSTEM_REPLY_TO_USER_CRACKING_CODE = """Well, well noob. You did it.
+SYSTEM_REPLY_TO_USER_CRACKING_CODE = """Well, well. You did it.
 Who knew you would be able to crack my code!"""
 
 SYSTEM_NEXT_PART_TEXT = """Time to move on to next step.
 We swap our turns now. Click on the 'NEXT' button to begin.
 Then, click on SET/START as you see fit."""
 
-SYSTEM_WINNING_TEXT = """Yo Noob! Told you, you had no chance against me.
+SYSTEM_WINNING_TEXT = """Yo! Told you, you had no chance against me.
 I win. I GODDAMN win. Now go home and come back when you are ready!"""
 
 SYSTEM_TIE_TEXT = """Ah, guess we are even. It's a tie.
@@ -184,23 +184,24 @@ SYSTEM_EXIT_TEXT = """In any case, it's GAME OVER.
 So if you want to go back home, click on the EXIT button below.
 Until next time!"""
 
+
 # User Chats
 USER_START_TEXT = """Sure bro. Let's get started.
 I ain't quitting without winning. You better don't whine after I win."""
 
-USER_SET_CODE_TEXT_REPLY = """Who you calling a Noob, you Noobie?
+USER_SET_CODE_TEXT_REPLY = """Ay, who you calling a LOSER?
 I thought I already told I ain't quitting without winning. Don't whine from now itself. Lol."""
 
-USER_PROMPT_SYSTEM_TO_DECODE = """You ain't cracking my code, Noobie.
+USER_PROMPT_SYSTEM_TO_DECODE = """You ain't cracking my code, LOSER.
 Not now. Now in an eternity! Keep whining."""
 
 USER_REVEAL_CODE_REPLY = """I may have lost this game. But I'll be back.
-Watch out for me, you noobie!"""
+Watch out for me!"""
 
-USER_REPLY_TO_SYSTEM_CRACKING_CODE = """Well Noobie! Good for you.
-You finally were able to crack it. Not bad, huh!"""
+USER_REPLY_TO_SYSTEM_CRACKING_CODE = """Well hey! Good for you.
+You finally were able to crack it!"""
 
-USER_WINNING_TEXT = """Who's the noob now, Noobie!?
+USER_WINNING_TEXT = """Who's the LOSER now, haha!?
 Told you I'd win. Now keep whining.
 I WIN. I GODDAMN WIN!"""
 
